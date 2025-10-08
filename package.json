@@ -1,0 +1,27 @@
+{
+  "name": "faang-tech-website",
+  "version": "1.0.0",
+  "description": "FAANG Tech Lab - Premier Tech Education Website",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'No build step required for static HTML site' && exit 0",
+    "build:azure": "echo 'No build step required for static HTML site' && exit 0",
+    "start": "echo 'Static site - no start command needed' && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zaheer037/faang-deployment.git"
+  },
+  "keywords": [
+    "education",
+    "tech",
+    "java",
+    "cybersecurity",
+    "programming",
+    "courses"
+  ],
+  "author": "FAANG Tech Lab",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}
