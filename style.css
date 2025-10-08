@@ -80,6 +80,8 @@ body {
     background-color: var(--bg-body);
     overflow-x: hidden;
     transition: background-color var(--theme-transition-duration) ease, color var(--theme-transition-duration) ease;
+    width: 100%;
+    max-width: 100vw;
 }
 
 .container {
@@ -718,6 +720,11 @@ html[data-theme='dark'] .courses {
     display: none;
 }
 
+.courses-grid {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 
 .course-card {
     flex: 0 0 auto;
@@ -962,6 +969,11 @@ html[data-theme='dark'] .codegym-platform {
     display: none;
 }
 
+.codegym-content-wrapper {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 
 .codegym-content {
     flex: 0 0 auto;
@@ -1036,14 +1048,6 @@ html[data-theme='dark'] .training-the-trainers {
 
 .training-the-trainers .codegym-content {
     width: 300px;
-}
-
-.training-the-trainers .codegym-icon .codegym-logo {
-    /* Inherits image styling from .codegym-icon .codegym-logo */
-}
-
-.training-the-trainers .codegym-description {
-    /* Inherits text styling from .codegym-description */
 }
 
 
@@ -1368,12 +1372,26 @@ html[data-theme='dark'] .form-message.error {
         position: relative;
         transform: none;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
+        grid-template-rows: repeat(2, 1fr);
         gap: var(--spacing-sm);
-        margin-top: var(--spacing-md);
-        margin: 0 auto;
-        width: fit-content;
+        margin: var(--spacing-md) auto 0 auto;
+        width: 100%;
         max-width: 100%;
+        padding: 0 15px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    /* Reset desktop grid positioning for mobile */
+    .floating-elements .floating-card:nth-child(1),
+    .floating-elements .floating-card:nth-child(2),
+    .floating-elements .floating-card:nth-child(3),
+    .floating-elements .floating-card:nth-child(4),
+    .floating-elements .floating-card:nth-child(5),
+    .floating-elements .floating-card:nth-child(6) {
+        grid-area: auto;
+        align-self: center;
+        justify-self: center;
     }
 
     .floating-card {
@@ -1385,6 +1403,7 @@ html[data-theme='dark'] .form-message.error {
         width: 110px;
         padding: 10px 8px;
         font-size: 0.8rem;
+        margin: 0;
     }
     .floating-card i {
         font-size: 1.3rem;
@@ -1397,6 +1416,21 @@ html[data-theme='dark'] .form-message.error {
     /* Hide animated FAANG logos on smaller screens */
     .faang-logos-section {
         display: none;
+    }
+
+    /* Mobile fixes for horizontal scrolling sections */
+    .courses-grid {
+        padding: 0 15px var(--spacing-sm);
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .codegym-content-wrapper {
+        padding: var(--spacing-sm) 15px;
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
     }
 
     .section-header h2 {
@@ -1414,7 +1448,10 @@ html[data-theme='dark'] .form-message.error {
 
     .contact-info, .contact-form {
         max-width: 100%;
+        width: 100%;
         padding: var(--spacing-md);
+        margin: 0 auto;
+        box-sizing: border-box;
     }
 
     .footer-grid {
@@ -1459,14 +1496,34 @@ html[data-theme='dark'] .form-message.error {
         font-size: 1.7rem;
     }
     .floating-elements {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         gap: var(--spacing-xs);
-        max-width: 320px;
+        max-width: 100%;
+        width: 100%;
         margin: var(--spacing-md) auto 0 auto;
+        padding: 0 20px;
+        justify-items: center;
+        align-items: center;
     }
+    
+    /* Ensure grid positioning is reset for proper 3x2 layout */
+    .floating-elements .floating-card:nth-child(1),
+    .floating-elements .floating-card:nth-child(2),
+    .floating-elements .floating-card:nth-child(3),
+    .floating-elements .floating-card:nth-child(4),
+    .floating-elements .floating-card:nth-child(5),
+    .floating-elements .floating-card:nth-child(6) {
+        grid-area: auto;
+        align-self: center;
+        justify-self: center;
+    }
+    
     .floating-card {
-        width: 140px;
-        padding: 12px;
+        width: 110px;
+        padding: 10px 8px;
+        margin: 3px;
+        font-size: 0.75rem;
     }
     .team-member-card h3 {
         font-size: 1.6rem;
@@ -1486,12 +1543,19 @@ html[data-theme='dark'] .form-message.error {
     }
     .courses-grid {
         gap: var(--spacing-md);
+        padding: 0 10px var(--spacing-sm);
     }
     .course-card {
         width: 280px;
     }
     .codegym-content {
         width: 350px;
+    }
+    
+    /* Additional mobile containment */
+    .courses-grid, .codegym-content-wrapper {
+        max-width: calc(100vw - 20px);
+        margin: 0 10px;
     }
 }
 
@@ -1507,12 +1571,34 @@ html[data-theme='dark'] .form-message.error {
         width: 100%;
     }
     .floating-elements {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         gap: var(--spacing-sm);
+        max-width: 100%;
+        width: 100%;
+        margin: var(--spacing-md) auto 0 auto;
+        padding: 0 15px;
+        justify-items: center;
+        align-items: center;
     }
+    
+    /* Reset grid positioning for mobile layout */
+    .floating-elements .floating-card:nth-child(1),
+    .floating-elements .floating-card:nth-child(2),
+    .floating-elements .floating-card:nth-child(3),
+    .floating-elements .floating-card:nth-child(4),
+    .floating-elements .floating-card:nth-child(5),
+    .floating-elements .floating-card:nth-child(6) {
+        grid-area: auto;
+        align-self: center;
+        justify-self: center;
+    }
+    
     .floating-card {
-        width: 180px;
-        padding: 15px 20px;
+        width: 100px;
+        padding: 12px 8px;
+        margin: 3px;
+        font-size: 0.7rem;
     }
     .footer-grid {
         grid-template-columns: 1fr;
@@ -1537,6 +1623,64 @@ html[data-theme='dark'] .form-message.error {
     .codegym-content {
         width: 90%;
         margin: 0 auto;
+    }
+    
+    /* Ensure no horizontal overflow on very small screens */
+    .courses-grid, .codegym-content-wrapper {
+        width: 100%;
+        max-width: 100vw;
+        margin: 0;
+        padding: 0 5px var(--spacing-sm);
+        box-sizing: border-box;
+    }
+    
+    .course-card, .codegym-content {
+        min-width: 250px;
+    }
+    
+    /* Ensure contact cards have identical width on small screens */
+    .contact-info, .contact-form {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 15px auto;
+        box-sizing: border-box;
+    }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 360px) {
+    .floating-elements {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 6px;
+        max-width: 100%;
+        width: 100%;
+        margin: var(--spacing-md) auto 0 auto;
+        padding: 0 8px;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    /* Reset grid positioning for small mobile layout */
+    .floating-elements .floating-card:nth-child(1),
+    .floating-elements .floating-card:nth-child(2),
+    .floating-elements .floating-card:nth-child(3),
+    .floating-elements .floating-card:nth-child(4),
+    .floating-elements .floating-card:nth-child(5),
+    .floating-elements .floating-card:nth-child(6) {
+        grid-area: auto;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .floating-card {
+        width: 90px;
+        padding: 8px 6px;
+        margin: 2px;
+        font-size: 0.65rem;
+    }
+    .floating-card i {
+        font-size: 1rem;
     }
 }
 /* Add to your CSS or inside <style> */
