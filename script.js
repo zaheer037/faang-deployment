@@ -249,6 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const name = document.getElementById('name').value.trim();
             const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
             //const subject = document.getElementById('subject').value.trim();
             const message = document.getElementById('message').value.trim();
 
@@ -259,13 +260,20 @@ document.addEventListener('DOMContentLoaded', () => {
             let isValid = true;
             let errorMessage = '';
 
-            if (name === '' || email === '' || message === '') {
-                errorMessage += 'Name, Email, and Message are required. ';
+            if (name === '' || email === '' || phone === '' || message === '') {
+                errorMessage += 'Name, Email, Phone Number, and Message are required. ';
                 isValid = false;
             } else {
                 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                 if (!emailRegex.test(email)) {
                     errorMessage += 'Please enter a valid email address. ';
+                    isValid = false;
+                }
+
+                // Basic phone number validation (10 digits, allowing for common formats)
+                const phoneRegex = /^[\+]?[1-9][\d]{9,14}$/;
+                if (!phoneRegex.test(phone.replace(/[\s\-\(\)]/g, ''))) {
+                    errorMessage += 'Please enter a valid phone number (10-15 digits). ';
                     isValid = false;
                 }
             }
