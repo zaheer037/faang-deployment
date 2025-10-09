@@ -275,7 +275,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 formMessage.classList.add('error');
                 formMessage.style.opacity = 1;
             } else {
-                emailjs.sendForm('service_7lyepsy', 'template_f3blfnd', contactForm)
+                emailjs.sendForm('service_1270jkg', 'template_nw5awxg', contactForm)
                     .then(function(response) {
                         formMessage.textContent = '✅ Message sent successfully!';
                         formMessage.classList.add('success');
