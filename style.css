@@ -1400,9 +1400,21 @@ html[data-theme='dark'] .form-message.error {
         width: 110px;
         padding: 10px 8px;
         font-size: 0.8rem;
+        min-height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+    
     .floating-card i {
         font-size: 1.3rem;
+        margin-bottom: 4px;
+    }
+    
+    .floating-card span {
+        line-height: 1.2;
+        text-align: center;
     }
 
     .hero-visual::before, .hero-visual::after {
@@ -1584,12 +1596,29 @@ html[data-theme='dark'] .form-message.error {
         margin: var(--spacing-md) auto 0 auto;
         padding: 0 15px;
         justify-items: center;
+        align-items: center;
     }
+    
     .floating-card {
         width: 100px;
         padding: 12px 8px;
         margin: 3px;
         font-size: 0.7rem;
+        min-height: 78px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .floating-card i {
+        font-size: 1.2rem;
+        margin-bottom: 4px;
+    }
+    
+    .floating-card span {
+        line-height: 1.2;
+        text-align: center;
     }
     .footer-grid {
         grid-template-columns: 1fr;
@@ -1645,6 +1674,126 @@ html[data-theme='dark'] .form-message.error {
     }
 }
 
+/* iPhone 6/7/8 Plus and similar larger mobile devices */
+@media (max-width: 414px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .floating-elements {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        max-width: 100%;
+        width: 100%;
+        margin: var(--spacing-md) auto 0 auto;
+        padding: 0 10px;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .floating-card {
+        width: 98px;
+        padding: 11px 8px;
+        margin: 3px;
+        font-size: 0.69rem;
+        min-height: 76px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .floating-card i {
+        font-size: 1.15rem;
+        margin-bottom: 4px;
+    }
+    
+    .floating-card span {
+        line-height: 1.2;
+        text-align: center;
+    }
+}
+
+/* iPhone 12 Pro and similar devices */
+@media (max-width: 390px) {
+    .container {
+        padding: 0 9px;
+    }
+
+    .floating-elements {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+        max-width: 100%;
+        width: 100%;
+        margin: var(--spacing-md) auto 0 auto;
+        padding: 0 9px;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .floating-card {
+        width: 95px;
+        padding: 10px 7px;
+        margin: 2px;
+        font-size: 0.68rem;
+        min-height: 75px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .floating-card i {
+        font-size: 1.1rem;
+        margin-bottom: 4px;
+    }
+    
+    .floating-card span {
+        line-height: 1.2;
+        text-align: center;
+    }
+}
+
+/* iPhone XR and similar devices */
+@media (max-width: 375px) {
+    .container {
+        padding: 0 8px;
+    }
+
+    .floating-elements {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+        max-width: 100%;
+        width: 100%;
+        margin: var(--spacing-md) auto 0 auto;
+        padding: 0 8px;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .floating-card {
+        width: 92px;
+        padding: 9px 6px;
+        margin: 2px;
+        font-size: 0.66rem;
+        min-height: 72px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .floating-card i {
+        font-size: 1.05rem;
+        margin-bottom: 3px;
+    }
+    
+    .floating-card span {
+        line-height: 1.1;
+        text-align: center;
+    }
+}
+
 /* Extra small mobile devices */
 @media (max-width: 360px) {
     /* Ultra minimal container padding for extra small screens */
@@ -1663,13 +1812,25 @@ html[data-theme='dark'] .form-message.error {
         align-items: center;
     }
     .floating-card {
-        width: 90px;
-        padding: 8px 6px;
+        width: 88px;
+        padding: 8px 5px;
         margin: 2px;
-        font-size: 0.65rem;
+        font-size: 0.64rem;
+        min-height: 68px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+    
     .floating-card i {
         font-size: 1rem;
+        margin-bottom: 3px;
+    }
+    
+    .floating-card span {
+        line-height: 1.0;
+        text-align: center;
     }
 }
 /* Add to your CSS or inside <style> */
