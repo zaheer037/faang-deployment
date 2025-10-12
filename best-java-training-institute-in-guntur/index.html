@@ -105,23 +105,7 @@
             padding-top: 100px;
         }
 
-        /* Testimonials Scrolling Animation */
-        .testimonials-container {
-            overflow: hidden;
-            white-space: nowrap;
-            position: relative;
-            background: #f0f5fa;
-            border-radius: 12px;
-            padding: 2rem 0;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-        }
-
-        .testimonials-scroll {
-            display: inline-flex;
-            gap: 2rem;
-            transition: transform 0.05s linear;
-        }
-
+        /* Testimonials Cards Styling */
         .testimonial-card {
             flex: 0 0 auto;
             width: 350px;
@@ -131,10 +115,7 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             border-top: 4px solid #3b82f6;
             white-space: normal;
-        }
-
-        .testimonials-scroll:hover {
-            animation-play-state: paused;
+            min-height: 200px; /* Ensure consistent height */
         }
 
         /* Ensure testimonial content wraps properly */
@@ -306,122 +287,120 @@
         </section>
 
         <!-- 7. Testimonials Section with Continuous Scrolling -->
-        <section class="w-full py-12 contact">
+        <section id="testimonials" class="w-full py-12 contact">
             <div class="max-w-6xl mx-auto px-4">
                 <h2 class="text-2xl font-bold mb-8 text-gray-800 text-center">
                     <span class="heading-underline">Hear From Our Guntur Graduates</span>
                 </h2>
 
-                <!-- Continuous Scrolling Testimonials Container -->
-                <div class="testimonials-container">
-                    <div class="testimonials-scroll">
-                        <!-- Testimonial Card 1 -->
-                        <div class="testimonial-card">
-                            <div class="flex items-start mb-4">
-                                <img src="https://placehold.co/60x60/3b82f6/ffffff?text=KB" alt="Karan Bose"
-                                    class="rounded-full w-14 h-14 object-cover mr-4">
-                                <div>
-                                    <p class="font-semibold text-gray-800">Karan Bose</p>
-                                    <p class="text-sm text-gray-500">Full Stack Developer, Guntur</p>
-                                    <div class="text-yellow-500 text-lg">★★★★★</div>
-                                </div>
+                <!-- Horizontal Scrolling Testimonials Container (using index.html method) -->
+                <div class="codegym-content-wrapper">
+                    <!-- Testimonial Card 1 -->
+                    <div class="testimonial-card">
+                        <div class="flex items-start mb-4">
+                            <img src="https://placehold.co/60x60/3b82f6/ffffff?text=KB" alt="Karan Bose"
+                                class="rounded-full w-14 h-14 object-cover mr-4">
+                            <div>
+                                <p class="font-semibold text-gray-800">Karan Bose</p>
+                                <p class="text-sm text-gray-500">Full Stack Developer, Guntur</p>
+                                <div class="text-yellow-500 text-lg">★★★★★</div>
                             </div>
-                            <p class="text-gray-700 text-sm">
-                                "The Java training centres in Guntur are many, but this one is the best for job placement.
-                                The in-person mentorship was excellent, and the FAANG Tech prep helped me secure my first
-                                role quickly."
-                            </p>
                         </div>
+                        <p class="text-gray-700 text-sm">
+                            "The Java training centres in Guntur are many, but this one is the best for job placement.
+                            The in-person mentorship was excellent, and the FAANG Tech prep helped me secure my first
+                            role quickly."
+                        </p>
+                    </div>
 
-                        <!-- Testimonial Card 2 -->
-                        <div class="testimonial-card">
-                            <div class="flex items-start mb-4">
-                                <img src="https://placehold.co/60x60/3b82f6/ffffff?text=RT" alt="Ravi Teja"
-                                    class="rounded-full w-14 h-14 object-cover mr-4">
-                                <div>
-                                    <p class="font-semibold text-gray-800">Ravi Teja</p>
-                                    <p class="text-sm text-gray-500">Backend Engineer, Hyderabad</p>
-                                    <div class="text-yellow-500 text-lg">★★★★★</div>
-                                </div>
+                    <!-- Testimonial Card 2 -->
+                    <div class="testimonial-card">
+                        <div class="flex items-start mb-4">
+                            <img src="https://placehold.co/60x60/3b82f6/ffffff?text=RT" alt="Ravi Teja"
+                                class="rounded-full w-14 h-14 object-cover mr-4">
+                            <div>
+                                <p class="font-semibold text-gray-800">Ravi Teja</p>
+                                <p class="text-sm text-gray-500">Backend Engineer, Hyderabad</p>
+                                <div class="text-yellow-500 text-lg">★★★★★</div>
                             </div>
-                            <p class="text-gray-700 text-sm">
-                                "My confidence grew significantly after completing this program. The resume building and
-                                mock interviews were so specific to the current market. I landed a high-paying role in
-                                Hyderabad within 4 months."
-                            </p>
                         </div>
+                        <p class="text-gray-700 text-sm">
+                            "My confidence grew significantly after completing this program. The resume building and
+                            mock interviews were so specific to the current market. I landed a high-paying role in
+                            Hyderabad within 4 months."
+                        </p>
+                    </div>
 
-                        <!-- Testimonial Card 3 -->
-                        <div class="testimonial-card">
-                            <div class="flex items-start mb-4">
-                                <img src="https://placehold.co/60x60/3b82f6/ffffff?text=RZ" alt="Rizwan"
-                                    class="rounded-full w-14 h-14 object-cover mr-4">
-                                <div>
-                                    <p class="font-semibold text-gray-800">Rizwan</p>
-                                    <p class="text-sm text-gray-500">Java Full Stack Developer</p>
-                                    <div class="text-yellow-500 text-lg">★★★★★</div>
-                                </div>
+                    <!-- Testimonial Card 3 -->
+                    <div class="testimonial-card">
+                        <div class="flex items-start mb-4">
+                            <img src="https://placehold.co/60x60/3b82f6/ffffff?text=RZ" alt="Rizwan"
+                                class="rounded-full w-14 h-14 object-cover mr-4">
+                            <div>
+                                <p class="font-semibold text-gray-800">Rizwan</p>
+                                <p class="text-sm text-gray-500">Java Full Stack Developer</p>
+                                <div class="text-yellow-500 text-lg">★★★★★</div>
                             </div>
-                            <p class="text-gray-700 text-sm">
-                                "The trainer had expert knowledge of Java and JEE. This is a top-tier Java course in
-                                Guntur for anyone serious about expert, practical knowledge and getting real interview
-                                preparation."
-                            </p>
                         </div>
+                        <p class="text-gray-700 text-sm">
+                            "The trainer had expert knowledge of Java and JEE. This is a top-tier Java course in
+                            Guntur for anyone serious about expert, practical knowledge and getting real interview
+                            preparation."
+                        </p>
+                    </div>
 
-                        <!-- Testimonial Card 4 -->
-                        <div class="testimonial-card">
-                            <div class="flex items-start mb-4">
-                                <img src="https://placehold.co/60x60/3b82f6/ffffff?text=SW" alt="Swathi"
-                                    class="rounded-full w-14 h-14 object-cover mr-4">
-                                <div>
-                                    <p class="font-semibold text-gray-800">Swathi</p>
-                                    <p class="text-sm text-gray-500">Full Stack Java Trainee</p>
-                                    <div class="text-yellow-500 text-lg">★★★★★</div>
-                                </div>
+                    <!-- Testimonial Card 4 -->
+                    <div class="testimonial-card">
+                        <div class="flex items-start mb-4">
+                            <img src="https://placehold.co/60x60/3b82f6/ffffff?text=SW" alt="Swathi"
+                                class="rounded-full w-14 h-14 object-cover mr-4">
+                            <div>
+                                <p class="font-semibold text-gray-800">Swathi</p>
+                                <p class="text-sm text-gray-500">Full Stack Java Trainee</p>
+                                <div class="text-yellow-500 text-lg">★★★★★</div>
                             </div>
-                            <p class="text-gray-700 text-sm">
-                                "The Full-Stack Java module was incredibly detailed. The mentorship was personalized,
-                                helping me convert theoretical knowledge into deployable projects. Essential for anyone
-                                targeting a senior developer role!"
-                            </p>
                         </div>
+                        <p class="text-gray-700 text-sm">
+                            "The Full-Stack Java module was incredibly detailed. The mentorship was personalized,
+                            helping me convert theoretical knowledge into deployable projects. Essential for anyone
+                            targeting a senior developer role!"
+                        </p>
+                    </div>
 
-                        <!-- Testimonial Card 5 -->
-                        <div class="testimonial-card">
-                            <div class="flex items-start mb-4">
-                                <img src="https://placehold.co/60x60/3b82f6/ffffff?text=VT" alt="Vivek"
-                                    class="rounded-full w-14 h-14 object-cover mr-4">
-                                <div>
-                                    <p class="font-semibold text-gray-800">Vivek</p>
-                                    <p class="text-sm text-gray-500">Software Engineer, Chennai</p>
-                                    <div class="text-yellow-500 text-lg">★★★★★</div>
-                                </div>
+                    <!-- Testimonial Card 5 -->
+                    <div class="testimonial-card">
+                        <div class="flex items-start mb-4">
+                            <img src="https://placehold.co/60x60/3b82f6/ffffff?text=VT" alt="Vivek"
+                                class="rounded-full w-14 h-14 object-cover mr-4">
+                            <div>
+                                <p class="font-semibold text-gray-800">Vivek</p>
+                                <p class="text-sm text-gray-500">Software Engineer, Chennai</p>
+                                <div class="text-yellow-500 text-lg">★★★★★</div>
                             </div>
-                            <p class="text-gray-700 text-sm">
-                                "The flexible EMI option made this top-quality Java course in Guntur accessible. I
-                                switched my career path successfully, and the team provided unwavering placement support
-                                until I accepted my offer."
-                            </p>
                         </div>
+                        <p class="text-gray-700 text-sm">
+                            "The flexible EMI option made this top-quality Java course in Guntur accessible. I
+                            switched my career path successfully, and the team provided unwavering placement support
+                            until I accepted my offer."
+                        </p>
+                    </div>
 
-                        <!-- Testimonial Card 6 -->
-                        <div class="testimonial-card">
-                            <div class="flex items-start mb-4">
-                                <img src="https://placehold.co/60x60/3b82f6/ffffff?text=LK" alt="Lakshmi"
-                                    class="rounded-full w-14 h-14 object-cover mr-4">
-                                <div>
-                                    <p class="font-semibold text-gray-800">Lakshmi</p>
-                                    <p class="text-sm text-gray-500">Backend Developer, Visakhapatnam</p>
-                                    <div class="text-yellow-500 text-lg">★★★★★</div>
-                                </div>
+                    <!-- Testimonial Card 6 -->
+                    <div class="testimonial-card">
+                        <div class="flex items-start mb-4">
+                            <img src="https://placehold.co/60x60/3b82f6/ffffff?text=LK" alt="Lakshmi"
+                                class="rounded-full w-14 h-14 object-cover mr-4">
+                            <div>
+                                <p class="font-semibold text-gray-800">Lakshmi</p>
+                                <p class="text-sm text-gray-500">Backend Developer, Visakhapatnam</p>
+                                <div class="text-yellow-500 text-lg">★★★★★</div>
                             </div>
-                            <p class="text-gray-700 text-sm">
-                                "I loved the physical classroom environment. The ability to network with peers and get
-                                immediate help from the Guntur faculty was invaluable. The curriculum is perfectly aligned
-                                with what companies look for."
-                            </p>
                         </div>
+                        <p class="text-gray-700 text-sm">
+                            "I loved the physical classroom environment. The ability to network with peers and get
+                            immediate help from the Guntur faculty was invaluable. The curriculum is perfectly aligned
+                            with what companies look for."
+                        </p>
                     </div>
                 </div>
             </div>
@@ -596,47 +575,40 @@
                 });
             }
 
-            // Testimonials infinite scroll
-            const testimonialsScroll = document.querySelector('.testimonials-scroll');
-            const testimonialCards = document.querySelectorAll('.testimonial-card');
-            
-            if (testimonialsScroll && testimonialCards.length > 0) {
-                let scrollPosition = 0;
-                const cardWidth = 350; // width of each card
-                const gap = 32; // 2rem gap in pixels
-                const totalCardWidth = cardWidth + gap;
-                const totalWidth = testimonialCards.length * totalCardWidth;
-                let isHovered = false;
-                
-                // Set initial position to show some cards
-                scrollPosition = -totalCardWidth;
-                testimonialsScroll.style.transform = `translateX(${scrollPosition}px)`;
-                
-                function animateScroll() {
-                    if (!isHovered) {
-                        scrollPosition -= 1; // Scroll speed (pixels per frame)
-                        
-                        // Reset position when all cards have scrolled through
-                        if (Math.abs(scrollPosition) >= totalWidth + totalCardWidth) {
-                            scrollPosition = 0;
-                        }
-                        
-                        testimonialsScroll.style.transform = `translateX(${scrollPosition}px)`;
+            // Auto-scroll functionality for testimonials (using index.html method)
+            const testimonialsContentWrapper = document.querySelector('#testimonials .codegym-content-wrapper');
+            let testimonialsScrollInterval;
+
+            const setupAutoScroll = (element, intervalIdVar) => {
+                if (!element) return;
+
+                // Clear any existing interval to prevent multiple scrolls
+                clearInterval(window[intervalIdVar]);
+
+                window[intervalIdVar] = setInterval(() => {
+                    element.scrollLeft += 1; // Scroll by 1 pixel
+
+                    // If scrolled to the end, reset to the beginning
+                    // Add a small buffer (e.g., 1px) to prevent flickering at the end
+                    if (element.scrollLeft + element.clientWidth >= element.scrollWidth - 1) {
+                        element.scrollLeft = 0;
                     }
-                    requestAnimationFrame(animateScroll);
-                }
-                
-                // Start animation
-                animateScroll();
-                
-                // Pause on hover
-                testimonialsScroll.addEventListener('mouseenter', () => {
-                    isHovered = true;
-                });
-                
-                testimonialsScroll.addEventListener('mouseleave', () => {
-                    isHovered = false;
-                });
+                }, 150); // Adjust interval for speed (lower value = faster scroll)
+            };
+
+            const stopAutoScroll = (intervalIdVar) => {
+                clearInterval(window[intervalIdVar]);
+            };
+
+            // Start auto-scroll for testimonials
+            setupAutoScroll(testimonialsContentWrapper, 'testimonialsScrollInterval');
+
+            // Pause/Resume auto-scroll for testimonials on hover/touch
+            if (testimonialsContentWrapper) {
+                testimonialsContentWrapper.addEventListener('mouseover', () => stopAutoScroll('testimonialsScrollInterval'));
+                testimonialsContentWrapper.addEventListener('mouseout', () => setupAutoScroll(testimonialsContentWrapper, 'testimonialsScrollInterval'));
+                testimonialsContentWrapper.addEventListener('touchstart', () => stopAutoScroll('testimonialsScrollInterval'));
+                testimonialsContentWrapper.addEventListener('touchend', () => setupAutoScroll(testimonialsContentWrapper, 'testimonialsScrollInterval'));
             }
         });
     </script>
