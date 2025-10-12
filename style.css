@@ -1869,3 +1869,328 @@ html[data-theme='dark'] .form-message.error {
   transform: scale(1.15);
   color: white;
 }
+
+/* Course Announcement Popup Modal */
+/* Body scroll lock when modal is open */
+body.modal-open {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.course-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.course-modal.show {
+    display: flex;
+    opacity: 1;
+}
+
+.course-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--overlay, rgba(26, 35, 126, 0.35));
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.course-modal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: var(--spacing-md);
+    position: relative;
+    z-index: 1;
+    overflow-y: auto;
+}
+
+.course-modal-content {
+    background: linear-gradient(135deg, #E8F0FA 0%, #FCF3C3 100%);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 16px;
+    padding: var(--spacing-lg);
+    max-width: 520px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    text-align: center;
+    transform: scale(0.8);
+    transition: transform 0.3s ease-in-out;
+    margin: auto;
+}
+
+.course-modal.show .course-modal-content {
+    transform: scale(1);
+}
+
+/* Dark mode styles for modal */
+html[data-theme='dark'] .course-modal-content {
+    background: linear-gradient(135deg, #283046 0%, #1A1A1A 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-primary);
+}
+
+.course-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.course-modal-close:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+html[data-theme='dark'] .course-modal-close:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.course-modal-header {
+    margin-bottom: var(--spacing-lg);
+}
+
+.course-modal-icon {
+    margin-bottom: var(--spacing-md);
+}
+
+.java-icon {
+    font-size: 3rem;
+    color: #f89820;
+    filter: drop-shadow(0 4px 8px rgba(248, 152, 32, 0.3));
+}
+
+.course-modal-title {
+    font-size: 2.2rem;
+    font-weight: var(--heading-font-weight);
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.2;
+}
+
+.course-modal-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: var(--spacing-md);
+}
+
+.course-modal-body {
+    margin-top: var(--spacing-lg);
+}
+
+.course-features-highlight {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    font-size: 0.95rem;
+    color: var(--text-primary);
+}
+
+.feature-item i {
+    color: #28a745;
+    font-size: 1rem;
+}
+
+.course-modal-cta {
+    margin-top: var(--spacing-lg);
+}
+
+.course-enroll-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    background: linear-gradient(90deg, #1A237E 0%, #764BA2 100%);
+    color: #FFFFFF;
+    padding: 16px 32px;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(26, 35, 126, 0.3);
+    border: none;
+    cursor: pointer;
+}
+
+.course-enroll-btn:hover {
+    background: linear-gradient(90deg, #764BA2 0%, #1A237E 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(26, 35, 126, 0.4);
+    color: #FFFFFF;
+}
+
+.course-enroll-btn i {
+    transition: transform 0.3s ease;
+}
+
+.course-enroll-btn:hover i {
+    transform: translateX(4px);
+}
+
+.course-modal-note {
+    margin-top: var(--spacing-md);
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+/* Responsive Design for Modal */
+/* Laptop and smaller desktop screens */
+@media (max-height: 800px) and (min-width: 769px) {
+    .course-modal-content {
+        max-height: 85vh;
+        padding: var(--spacing-md);
+    }
+    
+    .course-modal-title {
+        font-size: 1.9rem;
+        margin-bottom: var(--spacing-xs);
+    }
+    
+    .course-modal-subtitle {
+        font-size: 1rem;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .course-modal-body {
+        margin-top: var(--spacing-md);
+    }
+    
+    .course-features-highlight {
+        gap: var(--spacing-xs);
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .course-modal-cta {
+        margin-top: var(--spacing-md);
+    }
+}
+
+/* Shorter laptop screens */
+@media (max-height: 700px) and (min-width: 769px) {
+    .course-modal-content {
+        max-height: 80vh;
+        padding: var(--spacing-sm);
+    }
+    
+    .course-modal-title {
+        font-size: 1.7rem;
+    }
+    
+    .java-icon {
+        font-size: 2.5rem;
+    }
+    
+    .course-modal-header {
+        margin-bottom: var(--spacing-md);
+    }
+}
+
+@media (max-width: 768px) {
+    .course-modal-container {
+        padding: var(--spacing-sm);
+    }
+    
+    .course-modal-content {
+        padding: var(--spacing-md);
+        max-width: 95%;
+        max-height: 95vh;
+    }
+    
+    .course-modal-title {
+        font-size: 1.8rem;
+    }
+    
+    .course-modal-subtitle {
+        font-size: 1rem;
+    }
+    
+    .course-enroll-btn {
+        padding: 14px 28px;
+        font-size: 1rem;
+    }
+    
+    .feature-item {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .course-modal-content {
+        padding: var(--spacing-sm);
+    }
+    
+    .course-modal-title {
+        font-size: 1.6rem;
+    }
+    
+    .java-icon {
+        font-size: 2.5rem;
+    }
+    
+    .course-enroll-btn {
+        padding: 12px 24px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Animation Keyframes */
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeOutScale {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}

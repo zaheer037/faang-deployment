@@ -300,4 +300,94 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // --- Course Announcement Popup Functionality ---
+    const initCourseAnnouncementPopup = () => {
+        const modal = document.getElementById('courseAnnouncementModal');
+        const closeBtn = document.querySelector('.course-modal-close');
+        const overlay = document.querySelector('.course-modal-overlay');
+        const storageKey = 'faang-course-popup-shown';
+        
+        // Check if popup has been shown in this session
+        const hasBeenShown = sessionStorage.getItem(storageKey);
+        
+        if (!hasBeenShown && modal) {
+            // Show popup after 3 seconds
+            setTimeout(() => {
+                showModal();
+            }, 3000);
+        }
+        
+        function showModal() {
+            if (modal) {
+                modal.style.display = 'flex';
+                modal.setAttribute('aria-hidden', 'false');
+                
+                // Add show class for animation
+                setTimeout(() => {
+                    modal.classList.add('show');
+                }, 10);
+                
+                // Prevent body scroll when modal is open
+                document.body.classList.add('modal-open');
+                
+                // Focus trap for accessibility
+                const focusableElements = modal.querySelectorAll(
+                    'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+                );
+                if (focusableElements.length > 0) {
+                    focusableElements[0].focus();
+                }
+            }
+        }
+        
+        function hideModal() {
+            if (modal) {
+                modal.classList.remove('show');
+                
+                setTimeout(() => {
+                    modal.style.display = 'none';
+                    modal.setAttribute('aria-hidden', 'true');
+                    // Re-enable body scroll when modal is closed
+                    document.body.classList.remove('modal-open');
+                }, 300); // Match transition duration
+                
+                // Mark as shown in session storage
+                sessionStorage.setItem(storageKey, 'true');
+            }
+        }
+        
+        // Close button functionality
+        if (closeBtn) {
+            closeBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                hideModal();
+            });
+        }
+        
+        // Click outside to close
+        if (overlay) {
+            overlay.addEventListener('click', hideModal);
+        }
+        
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal && modal.classList.contains('show')) {
+                hideModal();
+            }
+        });
+        
+        // Enroll button tracking (optional analytics)
+        const enrollBtn = document.querySelector('.course-enroll-btn');
+        if (enrollBtn) {
+            enrollBtn.addEventListener('click', () => {
+                // Track enrollment click (you can add analytics here)
+                console.log('Course enrollment clicked');
+                hideModal();
+            });
+        }
+    };
+    
+    // Initialize popup functionality
+    initCourseAnnouncementPopup();
 });
