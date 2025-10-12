@@ -251,7 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const email = document.getElementById('email').value.trim();
             const phone = document.getElementById('phone').value.trim();
             //const subject = document.getElementById('subject').value.trim();
-            const message = document.getElementById('message').value.trim();
+            const course = document.getElementById('course').value.trim();
 
             formMessage.textContent = '';
             formMessage.classList.remove('success', 'error');
@@ -260,8 +260,8 @@ document.addEventListener('DOMContentLoaded', () => {
             let isValid = true;
             let errorMessage = '';
 
-            if (name === '' || email === '' || phone === '' || message === '') {
-                errorMessage += 'Name, Email, Phone Number, and Message are required. ';
+            if (name === '' || email === '' || phone === '' || course === '') {
+                errorMessage += 'Name, Email, Phone Number, and Course selection are required. ';
                 isValid = false;
             } else {
                 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 emailjs.sendForm('service_1270jkg', 'template_nw5awxg', contactForm)
                     .then(function(response) {
-                        formMessage.textContent = '✅ Message sent successfully!';
+                        formMessage.textContent = ' Message sent successfully!';
                         formMessage.classList.add('success');
                         formMessage.style.color = 'green';
                         formMessage.style.opacity = 1;
