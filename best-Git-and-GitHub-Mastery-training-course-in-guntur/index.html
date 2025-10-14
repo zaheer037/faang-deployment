@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 1. SEO CORE: Title Tag (High-Priority Keywords) -->
+    <title>Best Git & GitHub Mastery Course in Guntur | Version Control Training Institute</title>
+
+    <!-- 2. SEO CORE: Meta Description (Click-Through Rate Copy) -->
+    <meta name="description"
+        content="Master Git & GitHub in Guntur with expert training in version control, collaboration, and DevOps workflows. Learn branching, merging, CI/CD, and open source contribution. 100% placement support!">
+
+    <!-- 3. SEO CORE: Additional Meta Tags for Enhanced SEO -->
+    <meta name="keywords" content="git course guntur, github training, version control course, git mastery, github workflow, branching strategies, open source contribution, devops training guntur">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="FAANG Tech Lab">
+    <meta name="geo.region" content="IN-AP">
+    <meta name="geo.placename" content="Guntur">
+    <meta name="geo.position" content="16.2893;80.4364">
+    <meta name="ICBM" content="16.2893, 80.4364">
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://faangtechlab.com/git-github-mastery-course-guntur/">
+    <meta property="og:title" content="Best Git & GitHub Mastery Course in Guntur | Version Control Training">
+    <meta property="og:description" content="Learn Git & GitHub mastery with hands-on version control, collaboration workflows, and open source contribution training in Guntur.">
+    <meta property="og:image" content="https://faangtechlab.com/assets/git-github-banner.jpg">
+    <meta property="og:site_name" content="FAANG Tech Lab">
+    <meta property="og:locale" content="en_IN">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://faangtechlab.com/git-github-mastery-course-guntur/">
+    <meta property="twitter:title" content="Best Git & GitHub Mastery Course in Guntur | Version Control Training">
+    <meta property="twitter:description" content="Master Git & GitHub with hands-on version control and collaboration training in Guntur.">
+    <meta property="twitter:image" content="https://faangtechlab.com/assets/git-github-banner.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://faangtechlab.com/git-github-mastery-course-guntur/">
+
+    <!-- Tailwind CSS CDN for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'faang-primary': '#1A237E',
+                        'faang-secondary': '#46506A',
+                        'faang-accent': '#764BA2',
+                        'faang-bg': '#FCF3C3',
+                        'faang-light': '#E8F0FA'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to main stylesheet -->
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        /* Custom Font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f6fa;
+            /* Light, clean background */
+        }
+
+        /* Color matching the light blue background used in the uploaded images */
+        .ui-section-bg {
+            background-color: #f0f5fa;
+            border-radius: 12px;
+            padding: 2.5rem 1.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Style for the prominent CTA button (Updated to #1A237E) */
+        .cta-button {
+            transition: all 0.3s ease;
+            background: linear-gradient(135deg, #1A237E 0%, #764BA2 100%);
+            color: white !important;
+            text-decoration: none !important;
+            display: inline-block;
+            border: none;
+            box-shadow: 0 4px 15px rgba(26, 35, 126, 0.3);
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(135deg, #764BA2 0%, #1A237E 100%);
+            transform: translateY(-3px);
+            color: white !important;
+            text-decoration: none !important;
+            box-shadow: 0 8px 25px rgba(118, 75, 162, 0.4);
+        }
+
+        /* Style for feature/skill tags */
+        .skill-tag {
+            background-color: white;
+            border: 1px solid #d2e4f7;
+            color: #3b82f6;
+            transition: all 0.2s;
+            width: 280px; /* Fixed width for all skill tags */
+            min-height: 40px; /* Fixed minimum height */
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-shrink: 0; /* Prevent shrinking */
+        }
+
+        .skill-tag:hover {
+            border-color: #3b82f6;
+            background-color: #f8fafc;
+            transform: translateY(-1px);
+        }
+
+        .feature-card-item {
+            background-color: white;
+            border: 1px solid #d2e4f7;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card-item:hover {
+            border-color: #3b82f6;
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.1);
+            transform: translateY(-2px);
+        }
+
+        /* Feature Card Icons (Updated to #1A237E) */
+        .feature-card-item i {
+            color: #1A237E;
+        }
+
+        /* Heading Underline (Updated to #1A237E) */
+        .heading-underline {
+            border-bottom: 2px solid #1A237E;
+            display: inline-block;
+            padding-bottom: 0.25rem;
+        }
+
+        /* Fix navbar spacing for course page */
+        .course-body {
+            padding-top: 100px;
+        }
+
+        /* Testimonials Cards Styling */
+        .testimonial-card {
+            flex: 0 0 auto;
+            width: 350px;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-top: 4px solid #3b82f6;
+            white-space: normal;
+            min-height: 200px; /* Ensure consistent height */
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
+        }
+
+        /* Ensure testimonial content wraps properly */
+        .testimonial-card p {
+            white-space: normal;
+            word-wrap: break-word;
+        }
+
+        /* Git & GitHub specific styling */
+        .git-badge {
+            background: linear-gradient(135deg, #1A237E, #764BA2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Git workflow illustration */
+        .workflow-badge {
+            background: white;
+            border: 2px solid #1A237E;
+            color: #1A237E;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            margin: 0.5rem;
+        }
+
+        .workflow-badge:hover {
+            background: #1A237E;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .workflow-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+
+<body class="course-body">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <h2>
+                        <img src="../assets/logo.jpg" alt="FAANG Tech Lab Logo"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+                            style="height: 40px; width: auto;">
+                        <span style="display: none; font-size: 24px; font-weight: bold; color: #FF5722;">
+                            FAANG Tech
+                        </span>
+                    </h2>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#about">About Us</a></li>
+                <li><a href="../index.html#courses">Courses</a></li>
+                <li><a href="../index.html#codegym-platform">Our Tools</a></li>
+                <li><a href="../index.html#team">Our Team</a></li>
+                <li><a href="../index.html#training-the-trainers">Trainers</a></li>
+                <li><a href="../index.html#office-tour">Office Tour</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 4. H1 & Hero Section (Git & GitHub themed) -->
+    <section class="w-full text-center py-20 md:py-32 contact">
+        <div class="max-w-5xl mx-auto px-4">
+            <!-- Git Badge -->
+            <!-- <div class="mb-6 flex justify-center">
+                <span class="git-badge">
+                    <i class="fab fa-git-alt"></i>
+                    Professional Version Control Training
+                </span>
+            </div> -->
+            
+            <!-- Modern H1 with cleaner styling -->
+            <h1 class="text-4xl md:text-5xl font-black mb-6 leading-tight text-gray-900 tracking-tight">
+                Master Git & GitHub in Guntur: <br>
+                <span class="text-[#1A237E]">Essential Developer Skills for Every Tech Career</span>
+            </h1>
+            
+            <!-- Cleaner subtitle -->
+            <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto font-light leading-relaxed">
+                Learn industry-standard version control with Git & GitHub. Master branching strategies, collaboration workflows, and open source contribution to boost your developer profile.
+            </p>
+
+            <!-- Git workflow illustration -->
+            <!-- <div class="workflow-container">
+                <div class="workflow-badge">
+                    <i class="fas fa-code-branch"></i>
+                    Branching
+                </div>
+                <div class="workflow-badge">
+                    <i class="fas fa-code-merge"></i>
+                    Merging
+                </div>
+                <div class="workflow-badge">
+                    <i class="fas fa-users"></i>
+                    Collaboration
+                </div>
+                <div class="workflow-badge">
+                    <i class="fas fa-rocket"></i>
+                    CI/CD
+                </div>
+            </div> -->
+            
+            <!-- Modern dual CTA buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#contact" 
+                   class="bg-[#1A237E] hover:bg-[#0F1654] text-white font-semibold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                    Start Git Journey
+                </a>
+                <a href="#course-details" 
+                   class="border-2 border-[#1A237E] text-[#1A237E] hover:bg-[#1A237E] hover:text-white font-semibold py-4 px-8 rounded-full text-lg transition-all duration-300">
+                    View Course Details
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Skills Covered Section (Git & GitHub focused) -->
+    <section id="course-details" class="w-full py-12 contact">
+        <div class="max-w-6xl mx-auto px-4 ui-section-bg">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800 text-center">
+                <span class="heading-underline">Git & GitHub Skills You'll Master</span>
+            </h2>
+
+            <!-- Responsiveness: Grid layout for consistent skill tag sizing -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+                <!-- Git Fundamentals (5 skills) -->
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Git Installation & Configuration</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Repository Creation & Initialization</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Staging & Committing Changes</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Viewing History & Logs</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> File Status & Working Directory</span>
+
+                <!-- Branching & Merging (5 skills) -->
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Branch Creation & Management</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Merging & Fast-Forward</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Conflict Resolution Strategies</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Rebasing & Interactive Rebase</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Cherry-Picking & Stashing</span>
+
+                <!-- Remote Repositories (5 skills) -->
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Remote Repository Setup</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Push, Pull & Fetch Operations</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Tracking Branches & Upstream</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> SSH Keys & Authentication</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Multiple Remote Management</span>
+
+                <!-- GitHub Platform (5 skills) -->
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> GitHub Account & Profile Setup</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Repository Creation & Settings</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> README & Documentation</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Issues & Project Management</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> GitHub Pages & Static Hosting</span>
+
+                <!-- Collaboration (5 skills) -->
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Pull Requests & Code Reviews</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Forking & Open Source Workflow</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Team Collaboration Strategies</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Branch Protection Rules</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Contributing to Open Source</span>
+
+                <!-- Advanced Features (5 skills) -->
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> GitHub Actions & CI/CD</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Git Hooks & Automation</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Release Management & Tags</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> .gitignore & File Management</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Git Best Practices & Standards</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Key Features Grid (Git & GitHub focused) -->
+    <section class="w-full py-12 contact">
+        <div class="max-w-6xl mx-auto px-4 ui-section-bg">
+            <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">
+                <span class="heading-underline">Git & GitHub Training Key Features</span>
+            </h2>
+
+            <!-- Responsiveness: Grid adapts from 2 columns (mobile) to 3 columns (tablet/desktop) -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- Feature Card 1: Hands-on Practice -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-laptop-code text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">100+ Hands-on Git Commands</span>
+                </div>
+                <!-- Feature Card 2: Real Projects -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fab fa-github text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">Real GitHub Project Collaboration</span>
+                </div>
+                <!-- Feature Card 3: Open Source -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-code-branch text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">Open Source Contribution</span>
+                </div>
+                <!-- Feature Card 4: Workflow Mastery -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-sitemap text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">Professional Git Workflows</span>
+                </div>
+                <!-- Feature Card 5: Industry Experts -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-user-graduate text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">Industry DevOps Experts</span>
+                </div>
+                <!-- Feature Card 6: Career Boost -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-rocket text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">Developer Profile Enhancement</span>
+                </div>
+                <!-- Feature Card 7: CI/CD Integration -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-cogs text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">GitHub Actions & CI/CD</span>
+                </div>
+                <!-- Feature Card 8: Team Collaboration -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-users text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">Team Collaboration Skills</span>
+                </div>
+                <!-- Feature Card 9: Portfolio Development -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-briefcase text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">GitHub Portfolio Building</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Testimonials Section with Continuous Scrolling -->
+    <section id="testimonials" class="w-full py-12 contact">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">
+                <span class="heading-underline">Success Stories from Git & GitHub Graduates</span>
+            </h2>
+
+            <!-- Horizontal Scrolling Testimonials Container -->
+            <div class="codegym-content-wrapper">
+                <!-- Testimonial Card 1 -->
+                <div class="testimonial-card">
+                    <div class="flex items-start mb-4">
+                        <img src="https://placehold.co/60x60/3b82f6/ffffff?text=AK" alt="Arun Kumar"
+                            class="rounded-full w-14 h-14 object-cover mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">Arun Kumar</p>
+                            <p class="text-sm text-gray-500">DevOps Engineer, Infosys</p>
+                            <div class="text-yellow-500 text-lg">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        "Best Git & GitHub course in Guntur! The hands-on approach with real collaboration 
+                        projects taught me professional version control workflows. Now I confidently manage 
+                        complex branching strategies in my DevOps role."
+                    </p>
+                </div>
+
+                <!-- Testimonial Card 2 -->
+                <div class="testimonial-card">
+                    <div class="flex items-start mb-4">
+                        <img src="https://placehold.co/60x60/3b82f6/ffffff?text=DM" alt="Divya Madhuri"
+                            class="rounded-full w-14 h-14 object-cover mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">Divya Madhuri</p>
+                            <p class="text-sm text-gray-500">Software Developer, TCS</p>
+                            <div class="text-yellow-500 text-lg">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        "Excellent Git training! The open source contribution modules helped me contribute 
+                        to major projects on GitHub. My developer profile improved significantly, and 
+                        recruiters now notice my GitHub activity."
+                    </p>
+                </div>
+
+                <!-- Testimonial Card 3 -->
+                <div class="testimonial-card">
+                    <div class="flex items-start mb-4">
+                        <img src="https://placehold.co/60x60/3b82f6/ffffff?text=RS" alt="Ravi Shankar"
+                            class="rounded-full w-14 h-14 object-cover mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">Ravi Shankar</p>
+                            <p class="text-sm text-gray-500">Full Stack Developer, Wipro</p>
+                            <div class="text-yellow-500 text-lg">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        "The GitHub Actions and CI/CD modules were game-changers! Learning automated 
+                        deployment workflows made me valuable in my team. The instructors are industry 
+                        professionals who understand modern development practices."
+                    </p>
+                </div>
+
+                <!-- Testimonial Card 4 -->
+                <div class="testimonial-card">
+                    <div class="flex items-start mb-4">
+                        <img src="https://placehold.co/60x60/3b82f6/ffffff?text=PV" alt="Priya Varma"
+                            class="rounded-full w-14 h-14 object-cover mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">Priya Varma</p>
+                            <p class="text-sm text-gray-500">Backend Developer, Cognizant</p>
+                            <div class="text-yellow-500 text-lg">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        "From Git basics to advanced collaboration workflows - this course covered everything! 
+                        The conflict resolution and rebasing techniques saved me countless hours in team 
+                        projects. Highly recommend for all developers."
+                    </p>
+                </div>
+
+                <!-- Testimonial Card 5 -->
+                <div class="testimonial-card">
+                    <div class="flex items-start mb-4">
+                        <img src="https://placehold.co/60x60/3b82f6/ffffff?text=NK" alt="Nithin Kiran"
+                            class="rounded-full w-14 h-14 object-cover mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">Nithin Kiran</p>
+                            <p class="text-sm text-gray-500">Tech Lead, Accenture</p>
+                            <div class="text-yellow-500 text-lg">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        "Essential course for any developer! The team collaboration and project management 
+                        skills using GitHub helped me lead development teams effectively. My GitHub 
+                        portfolio now showcases professional contribution patterns."
+                    </p>
+                </div>
+
+                <!-- Testimonial Card 6 -->
+                <div class="testimonial-card">
+                    <div class="flex items-start mb-4">
+                        <img src="https://placehold.co/60x60/3b82f6/ffffff?text=ST" alt="Sravani Teja"
+                            class="rounded-full w-14 h-14 object-cover mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">Sravani Teja</p>
+                            <p class="text-sm text-gray-500">Cloud Engineer, Microsoft</p>
+                            <div class="text-yellow-500 text-lg">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        "Perfect foundation for DevOps career! The GitHub Pages and static hosting modules 
+                        helped me showcase projects professionally. The version control best practices 
+                        are now second nature in my cloud engineering role."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section from index.html -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Start Your Git & GitHub Journey</h2>
+                <p>Ready to master version control? Contact us for a free consultation and hands-on demo session.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+                    <h3>Contact Details</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 1st floor Lakshmipuram main road, opposite Sri patibandla sitaramaiah high school, Guntur</p>
+                    <p><i class="fas fa-envelope"></i> learn@faangtechlab.com</p>
+                    <p><i class="fas fa-phone-alt"></i>+91 8179423238</p>
+                    <p><i class="fas fa-globe"></i> <a href="https://faangtechlab.com" target="_blank"
+                            rel="noopener noreferrer">faangtechlab.com</a></p>
+                    <p><i class="fas fa-clock"></i> Always open</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/faangtechlab/?hl=en" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/faang-tech-lab-043855349/?originalSubdomain=in"
+                            target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left" data-aos-delay="200">
+                    <h3>Send Us a Message</h3>
+                    <form action="#" method="POST" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="from_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="from_email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="from_phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="course">Git & GitHub Track</label>
+                            <select id="course" name="course_interested" required>
+                                <option value="">Select your Git track...</option>
+                                <option value="Git & GitHub Mastery - Full Course">Git & GitHub Mastery - Full Course</option>
+                                <option value="Git Fundamentals">Git Fundamentals & Basics</option>
+                                <option value="GitHub Collaboration">GitHub Collaboration & Workflows</option>
+                                <option value="Open Source Contribution">Open Source Contribution</option>
+                                <option value="GitHub Actions & CI/CD">GitHub Actions & CI/CD</option>
+                                <option value="Git for Beginners">Git for Complete Beginners</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit-btn">Send Message</button>
+                        <div id="form-message" class="form-message"></div> <!-- Message display area -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918179423238?text=Hi%20Team%2C%20I%27m%20interested%20in%20your%20Git%20%26%20GitHub%20Mastery%20Course%20and%20would%20like%20to%20know%20more%20about%20the%20curriculum%20and%20batch%20timings."
+        class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer from index.html -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col about-col">
+                    <h3>FAANG Tech</h3>
+                    <p>Empowering the next generation of tech professionals with cutting-edge education in Git & GitHub mastery, version control, and collaborative development workflows.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html#home">Home</a></li>
+                        <li><a href="../index.html#about">About Us</a></li>
+                        <li><a href="../index.html#courses">Our Courses</a></li>
+                        <li><a href="https://codegym.cc/" target="_blank">CodeGym</a></li>
+                        <li><a href="../index.html#team">Our Team</a></li>
+                        <li><a href="../index.html#training-the-trainers">Trainers</a></li>
+                        <li><a href="../index.html#office-tour">Office Tour</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Git & GitHub Specializations</h3>
+                    <ul>
+                        <li>Git Fundamentals & Commands</li>
+                        <li>Branching & Merging Strategies</li>
+                        <li>GitHub Collaboration Workflows</li>
+                        <li>Open Source Contribution</li>
+                        <li>GitHub Actions & CI/CD</li>
+                        <li>Version Control Best Practices</li>
+                        <li>Team Collaboration Skills</li>
+                        <li>Professional Portfolio Building</li>
+                    </ul>
+                </div>
+                <div class="footer-col contact-footer-col">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt" style="color: #1877F2;"></i> 1st floor Lakshmipuram main road,
+                        opposite Sri patibandla sitaramaiah high school, Guntur</p>
+                    <p><i class="fas fa-envelope" style="color: #1877F2;"></i> learn@faangtechlab.com</p>
+                    <p><i class="fas fa-phone-alt" style="color: #1877F2;"></i>+91 8179423238</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/faangtechlab/?hl=en" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/faang-tech-lab-043855349/?originalSubdomain=in"
+                            target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FAANG Tech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 3. SEO CORE: Schema Markup (Enhanced for Git & GitHub) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "FAANG Tech Lab Guntur - Git & GitHub Mastery Institute",
+      "alternateName": ["Best Git Course Guntur", "GitHub Training Institute Guntur"],
+      "description": "Premier Git & GitHub mastery training institute in Guntur offering version control, collaboration workflows, open source contribution, and DevOps skills with hands-on projects.",
+      "url": "https://faangtechlab.com/git-github-mastery-course-guntur/",
+      "logo": "https://faangtechlab.com/assets/logo.jpg",
+      "image": "https://faangtechlab.com/assets/git-github-banner.jpg",
+      "telephone": "+918179423238",
+      "email": "learn@faangtechlab.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1st Floor Lakshmipuram main road, opposite Sri patibandla sitaramaiah high school",
+        "addressLocality": "Guntur",
+        "addressRegion": "Andhra Pradesh",
+        "postalCode": "522001",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "16.2893",
+        "longitude": "80.4364"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Guntur",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "Andhra Pradesh"
+        }
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Git & GitHub Mastery Courses",
+        "itemListElement": [
+          {
+            "@type": "Course",
+            "name": "Git & GitHub Fundamentals",
+            "description": "Complete Git version control and GitHub collaboration training with hands-on projects",
+            "provider": {
+              "@type": "Organization",
+              "name": "FAANG Tech Lab"
+            }
+          },
+          {
+            "@type": "Course",
+            "name": "Open Source Contribution",
+            "description": "Learn to contribute to open source projects and build professional GitHub portfolio",
+            "provider": {
+              "@type": "Organization",
+              "name": "FAANG Tech Lab"
+            }
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "180",
+        "bestRating": "5"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Arun Kumar"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "reviewBody": "Best Git & GitHub course in Guntur! The hands-on approach with real collaboration projects taught me professional version control workflows."
+        }
+      ]
+    }
+    </script>
+
+    <!-- Additional SEO: FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the duration of the Git & GitHub mastery course?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our comprehensive Git & GitHub mastery course is 6 weeks long with 100+ hands-on commands and real collaboration projects covering all aspects of version control."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide certification for Git & GitHub training?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we provide industry-recognized certification and help you build a professional GitHub portfolio that showcases your version control skills to employers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this Git course suitable for complete beginners?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely! Our Git & GitHub course starts from basics and gradually progresses to advanced workflows, making it perfect for beginners with no prior version control experience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will I learn to contribute to open source projects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Our course includes comprehensive modules on open source contribution, forking projects, creating pull requests, and building a strong developer profile on GitHub."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- EmailJS Integration -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("rWERztWm7Bzg3_Oph");
+        })();
+    </script>
+
+    <!-- Main JavaScript -->
+    <script src="../script.js"></script>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            const closeIcon = document.getElementById('close-icon');
+
+            if (mobileMenuButton) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                    menuIcon.classList.toggle('hidden');
+                    closeIcon.classList.toggle('hidden');
+                });
+            }
+
+            // Auto-scroll functionality for testimonials
+            const testimonialsContentWrapper = document.querySelector('#testimonials .codegym-content-wrapper');
+            let testimonialsScrollInterval;
+
+            const setupAutoScroll = (element, intervalIdVar) => {
+                if (!element) return;
+
+                clearInterval(window[intervalIdVar]);
+
+                window[intervalIdVar] = setInterval(() => {
+                    element.scrollLeft += 1;
+
+                    if (element.scrollLeft + element.clientWidth >= element.scrollWidth - 1) {
+                        element.scrollLeft = 0;
+                    }
+                }, 150);
+            };
+
+            const stopAutoScroll = (intervalIdVar) => {
+                clearInterval(window[intervalIdVar]);
+            };
+
+            // Start auto-scroll for testimonials
+            setupAutoScroll(testimonialsContentWrapper, 'testimonialsScrollInterval');
+
+            // Pause/Resume auto-scroll for testimonials on hover/touch
+            if (testimonialsContentWrapper) {
+                testimonialsContentWrapper.addEventListener('mouseover', () => stopAutoScroll('testimonialsScrollInterval'));
+                testimonialsContentWrapper.addEventListener('mouseout', () => setupAutoScroll(testimonialsContentWrapper, 'testimonialsScrollInterval'));
+                testimonialsContentWrapper.addEventListener('touchstart', () => stopAutoScroll('testimonialsScrollInterval'));
+                testimonialsContentWrapper.addEventListener('touchend', () => setupAutoScroll(testimonialsContentWrapper, 'testimonialsScrollInterval'));
+            }
+        });
+    </script>
+</body>
+
+</html>

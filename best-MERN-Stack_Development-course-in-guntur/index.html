@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 1. SEO CORE: Title Tag (High-Priority Keywords) -->
+    <title>Best MERN Stack Development Course in Guntur | MongoDB, Express, React, Node.js Training</title>
+
+    <!-- 2. SEO CORE: Meta Description (Click-Through Rate Copy) -->
+    <meta name="description"
+        content="Master MERN Stack Development in Guntur with expert training in MongoDB, Express.js, React.js, and Node.js. Build full-stack web applications with hands-on projects. 100% placement support!">
+
+    <!-- 3. SEO CORE: Additional Meta Tags for Enhanced SEO -->
+    <meta name="keywords" content="MERN stack course guntur, MongoDB training, Express.js course, React.js development, Node.js backend, full stack development guntur, javascript course, web development training">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="FAANG Tech Lab">
+    <meta name="geo.region" content="IN-AP">
+    <meta name="geo.placename" content="Guntur">
+    <meta name="geo.position" content="16.2893;80.4364">
+    <meta name="ICBM" content="16.2893, 80.4364">
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://faangtechlab.com/mern-stack-development-course-guntur/">
+    <meta property="og:title" content="Best MERN Stack Development Course in Guntur | Full Stack Training">
+    <meta property="og:description" content="Learn MERN Stack Development with hands-on projects in MongoDB, Express.js, React.js, and Node.js. Expert mentors and guaranteed placement support in Guntur.">
+    <meta property="og:image" content="https://faangtechlab.com/assets/mern-stack-banner.jpg">
+    <meta property="og:site_name" content="FAANG Tech Lab">
+    <meta property="og:locale" content="en_IN">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://faangtechlab.com/mern-stack-development-course-guntur/">
+    <meta property="twitter:title" content="Best MERN Stack Development Course in Guntur | Full Stack Training">
+    <meta property="twitter:description" content="Master MERN Stack Development with MongoDB, Express.js, React.js, and Node.js training in Guntur.">
+    <meta property="twitter:image" content="https://faangtechlab.com/assets/mern-stack-banner.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://faangtechlab.com/mern-stack-development-course-guntur/">
+
+    <!-- Tailwind CSS CDN for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'faang-primary': '#1A237E',
+                        'faang-secondary': '#46506A',
+                        'faang-accent': '#764BA2',
+                        'faang-bg': '#FCF3C3',
+                        'faang-light': '#E8F0FA'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to main stylesheet -->
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        /* Custom Font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f6fa;
+            /* Light, clean background */
+        }
+
+        /* Color matching the light blue background used in the uploaded images */
+        .ui-section-bg {
+            background-color: #f0f5fa;
+            border-radius: 12px;
+            padding: 2.5rem 1.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Style for the prominent CTA button (Updated to #1A237E) */
+        .cta-button {
+            transition: all 0.3s ease;
+            background: linear-gradient(135deg, #1A237E 0%, #764BA2 100%);
+            color: white !important;
+            text-decoration: none !important;
+            display: inline-block;
+            border: none;
+            box-shadow: 0 4px 15px rgba(26, 35, 126, 0.3);
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(135deg, #764BA2 0%, #1A237E 100%);
+            transform: translateY(-3px);
+            color: white !important;
+            text-decoration: none !important;
+            box-shadow: 0 8px 25px rgba(118, 75, 162, 0.4);
+        }
+
+        /* Style for feature/skill tags */
+        .skill-tag {
+            background-color: white;
+            border: 1px solid #d2e4f7;
+            color: #3b82f6;
+            transition: all 0.2s;
+            width: 280px; /* Fixed width for all skill tags */
+            min-height: 40px; /* Fixed minimum height */
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-shrink: 0; /* Prevent shrinking */
+        }
+
+        .skill-tag:hover {
+            border-color: #3b82f6;
+            background-color: #f8fafc;
+            transform: translateY(-1px);
+        }
+
+        .feature-card-item {
+            background-color: white;
+            border: 1px solid #d2e4f7;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card-item:hover {
+            border-color: #3b82f6;
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.1);
+            transform: translateY(-2px);
+        }
+
+        /* Feature Card Icons (Updated to #1A237E) */
+        .feature-card-item i {
+            color: #1A237E;
+        }
+
+        /* Heading Underline (Updated to #1A237E) */
+        .heading-underline {
+            border-bottom: 2px solid #1A237E;
+            display: inline-block;
+            padding-bottom: 0.25rem;
+        }
+
+        /* Fix navbar spacing for course page */
+        .course-body {
+            padding-top: 100px;
+        }
+
+        /* Testimonials Cards Styling */
+        .testimonial-card {
+            flex: 0 0 auto;
+            width: 350px;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-top: 4px solid #3b82f6;
+            white-space: normal;
+            min-height: 200px; /* Ensure consistent height */
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
+        }
+
+        /* Ensure testimonial content wraps properly */
+        .testimonial-card p {
+            white-space: normal;
+            word-wrap: break-word;
+        }
+
+        /* MERN Stack specific styling */
+        .mern-badge {
+            background: linear-gradient(135deg, #1A237E, #764BA2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* MERN Stack technology badges */
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+
+        .tech-badge {
+            background: white;
+            border: 2px solid #1A237E;
+            color: #1A237E;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .tech-badge:hover {
+            background: #1A237E;
+            color: white;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body class="course-body">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <h2>
+                        <img src="../assets/logo.jpg" alt="FAANG Tech Lab Logo"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+                            style="height: 40px; width: auto;">
+                        <span style="display: none; font-size: 24px; font-weight: bold; color: #FF5722;">
+                            FAANG Tech
+                        </span>
+                    </h2>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#about">About Us</a></li>
+                <li><a href="../index.html#courses">Courses</a></li>
+                <li><a href="../index.html#codegym-platform">Our Tools</a></li>
+                <li><a href="../index.html#team">Our Team</a></li>
+                <li><a href="../index.html#training-the-trainers">Trainers</a></li>
+                <li><a href="../index.html#office-tour">Office Tour</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 4. H1 & Hero Section (MERN Stack themed) -->
+    <section class="w-full text-center py-20 md:py-32 contact">
+        <div class="max-w-5xl mx-auto px-4">
+            <!-- MERN Badge -->
+            <!-- <div class="mb-6 flex justify-center">
+                <span class="mern-badge">
+                    <i class="fab fa-js-square"></i>
+                    Professional Full Stack Development Training
+                </span>
+            </div> -->
+            
+            <!-- Modern H1 with cleaner styling -->
+            <h1 class="text-4xl md:text-5xl font-black mb-6 leading-tight text-gray-900 tracking-tight">
+                Master MERN Stack Development in Guntur: <br>
+                <span class="text-[#1A237E]">Build Modern Full Stack Applications</span>
+            </h1>
+            
+            <!-- Cleaner subtitle -->
+            <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto font-light leading-relaxed">
+                Learn the complete MERN Stack with hands-on projects. Master MongoDB, Express.js, React.js, and Node.js to build scalable web applications from frontend to backend.
+            </p>
+
+            <!-- MERN Tech Stack Badges -->
+            <!-- <div class="tech-stack">
+                <div class="tech-badge">
+                    <i class="fas fa-database"></i>
+                    MongoDB
+                </div>
+                <div class="tech-badge">
+                    <i class="fas fa-server"></i>
+                    Express.js
+                </div>
+                <div class="tech-badge">
+                    <i class="fab fa-react"></i>
+                    React.js
+                </div>
+                <div class="tech-badge">
+                    <i class="fab fa-node-js"></i>
+                    Node.js
+                </div>
+            </div> -->
+            
+            <!-- Modern dual CTA buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#contact" 
+                   class="bg-[#1A237E] hover:bg-[#0F1654] text-white font-semibold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                    Start MERN Journey
+                </a>
+                <a href="#course-details" 
+                   class="border-2 border-[#1A237E] text-[#1A237E] hover:bg-[#1A237E] hover:text-white font-semibold py-4 px-8 rounded-full text-lg transition-all duration-300">
+                    View Course Details
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Skills Covered Section (MERN Stack focused) -->
+    <section id="course-details" class="w-full py-12 contact">
+        <div class="max-w-6xl mx-auto px-4 ui-section-bg">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800 text-center">
+                <span class="heading-underline">MERN Stack Skills You'll Master</span>
+            </h2>
+
+            <!-- Responsiveness: Grid layout for consistent skill tag sizing -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+                <!-- MERN specific skills with check icons -->
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> JavaScript ES6+ Fundamentals</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> HTML5 & CSS3 Advanced</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> React.js & JSX Syntax</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> React Hooks & State Management</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> React Router & Navigation</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Component Lifecycle & Effects</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Redux & Context API</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Node.js & NPM Ecosystem</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Express.js Framework</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> RESTful API Development</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> MongoDB & Mongoose ODM</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Database Design & Operations</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Authentication & Authorization</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> JWT Token Management</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Axios & HTTP Requests</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Git Version Control</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Responsive Web Design</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Bootstrap & Material-UI</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Deployment & Hosting</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Testing & Debugging</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Socket.io Real-time Apps</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Performance Optimization</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Key Features Grid (MERN Stack focused) -->
+    <section class="w-full py-12 contact">
+        <div class="max-w-6xl mx-auto px-4 ui-section-bg">
+            <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">
+                <span class="heading-underline">MERN Stack Training Key Features</span>
+            </h2>
+
+            <!-- Responsiveness: Grid adapts from 2 columns (mobile) to 3 columns (tablet/desktop) -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- Feature Card 1: Full Stack Projects -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-laptop-code text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">25+ Full Stack Projects</span>
+                </div>
+                <!-- Feature Card 2: Modern React -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fab fa-react text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">Latest React.js & Hooks</span>
+                </div>
+                <!-- Feature Card 3: Backend APIs -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-server text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">RESTful API Development</span>
+                </div>
+                <!-- Feature Card 4: Database Design -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-database text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">MongoDB & Database Design</span>
+                </div>
+                <!-- Feature Card 5: Industry Experts -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-user-graduate text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">Industry Full Stack Experts</span>
+                </div>
+                <!-- Feature Card 6: Job Placement -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-handshake text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">100% Placement Assistance</span>
+                </div>
+                <!-- Feature Card 7: Real-time Apps -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-bolt text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">Real-time Application Building</span>
+                </div>
+                <!-- Feature Card 8: Modern Deployment -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-cloud text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">Cloud Deployment & Hosting</span>
+                </div>
+                <!-- Feature Card 9: Portfolio Development -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-briefcase text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">Professional Portfolio Building</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Testimonials Section with Continuous Scrolling -->
+    <section id="testimonials" class="w-full py-12 contact">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">
+                <span class="heading-underline">Success Stories from MERN Stack Graduates</span>
+            </h2>
+
+            <!-- Horizontal Scrolling Testimonials Container -->
+            <div class="codegym-content-wrapper">
+                <!-- Testimonial Card 1 -->
+                <div class="testimonial-card">
+                    <div class="flex items-start mb-4">
+                        <img src="https://placehold.co/60x60/3b82f6/ffffff?text=RG" alt="Rajesh Goud"
+                            class="rounded-full w-14 h-14 object-cover mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">Rajesh Goud</p>
+                            <p class="text-sm text-gray-500">Full Stack Developer, Wipro</p>
+                            <div class="text-yellow-500 text-lg">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        "Best MERN stack course in Guntur! The hands-on projects really helped me understand 
+                        full stack development. From React components to MongoDB queries, everything was 
+                        taught with practical examples. Got placed immediately after completion!"
+                    </p>
+                </div>
+
+                <!-- Testimonial Card 2 -->
+                <div class="testimonial-card">
+                    <div class="flex items-start mb-4">
+                        <img src="https://placehold.co/60x60/3b82f6/ffffff?text=LK" alt="Lakshmi Kavya"
+                            class="rounded-full w-14 h-14 object-cover mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">Lakshmi Kavya</p>
+                            <p class="text-sm text-gray-500">React Developer, TCS</p>
+                            <div class="text-yellow-500 text-lg">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        "Excellent MERN stack training! The React.js modules were incredibly detailed with 
+                        hooks, context API, and state management. Building real-time chat applications gave 
+                        me confidence to work on complex projects in my job."
+                    </p>
+                </div>
+
+                <!-- Testimonial Card 3 -->
+                <div class="testimonial-card">
+                    <div class="flex items-start mb-4">
+                        <img src="https://placehold.co/60x60/3b82f6/ffffff?text=SK" alt="Sai Kiran"
+                            class="rounded-full w-14 h-14 object-cover mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">Sai Kiran</p>
+                            <p class="text-sm text-gray-500">Backend Developer, Infosys</p>
+                            <div class="text-yellow-500 text-lg">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        "The Node.js and Express.js training was outstanding! Learning to build RESTful 
+                        APIs and integrate with MongoDB gave me strong backend skills. The instructors 
+                        are industry professionals who understand current market demands."
+                    </p>
+                </div>
+
+                <!-- Testimonial Card 4 -->
+                <div class="testimonial-card">
+                    <div class="flex items-start mb-4">
+                        <img src="https://placehold.co/60x60/3b82f6/ffffff?text=PT" alt="Preethi Teja"
+                            class="rounded-full w-14 h-14 object-cover mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">Preethi Teja</p>
+                            <p class="text-sm text-gray-500">MERN Stack Developer, Accenture</p>
+                            <div class="text-yellow-500 text-lg">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        "From zero knowledge to full stack developer! The progression from HTML/CSS to 
+                        complete MERN applications was perfectly structured. The deployment modules helped 
+                        me host my projects professionally. Highly recommended!"
+                    </p>
+                </div>
+
+                <!-- Testimonial Card 5 -->
+                <div class="testimonial-card">
+                    <div class="flex items-start mb-4">
+                        <img src="https://placehold.co/60x60/3b82f6/ffffff?text=VR" alt="Vishnu Reddy"
+                            class="rounded-full w-14 h-14 object-cover mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">Vishnu Reddy</p>
+                            <p class="text-sm text-gray-500">Frontend Developer, Cognizant</p>
+                            <div class="text-yellow-500 text-lg">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        "The React.js training was exceptional! Learning modern hooks, routing, and 
+                        state management prepared me for real-world development. The e-commerce project 
+                        we built became my portfolio centerpiece and helped me land my dream job."
+                    </p>
+                </div>
+
+                <!-- Testimonial Card 6 -->
+                <div class="testimonial-card">
+                    <div class="flex items-start mb-4">
+                        <img src="https://placehold.co/60x60/3b82f6/ffffff?text=AN" alt="Anusha Naidu"
+                            class="rounded-full w-14 h-14 object-cover mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">Anusha Naidu</p>
+                            <p class="text-sm text-gray-500">Full Stack Engineer, Microsoft</p>
+                            <div class="text-yellow-500 text-lg">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        "Comprehensive MERN stack training with excellent placement support! The 
+                        authentication, socket.io, and performance optimization modules were advanced 
+                        topics that set me apart in interviews. Now working at Microsoft!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section from index.html -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Start Your MERN Stack Journey</h2>
+                <p>Ready to become a full stack developer? Contact us for a free consultation and demo session.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+                    <h3>Contact Details</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 1st floor Lakshmipuram main road, opposite Sri patibandla sitaramaiah high school, Guntur</p>
+                    <p><i class="fas fa-envelope"></i> learn@faangtechlab.com</p>
+                    <p><i class="fas fa-phone-alt"></i>+91 8179423238</p>
+                    <p><i class="fas fa-globe"></i> <a href="https://faangtechlab.com" target="_blank"
+                            rel="noopener noreferrer">faangtechlab.com</a></p>
+                    <p><i class="fas fa-clock"></i> Always open</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/faangtechlab/?hl=en" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/faang-tech-lab-043855349/?originalSubdomain=in"
+                            target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left" data-aos-delay="200">
+                    <h3>Send Us a Message</h3>
+                    <form action="#" method="POST" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="from_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="from_email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="from_phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="course">MERN Stack Track</label>
+                            <select id="course" name="course_interested" required>
+                                <option value="">Select your MERN track...</option>
+                                <option value="MERN Stack - Full Course">MERN Stack - Full Course</option>
+                                <option value="React.js Frontend Development">React.js Frontend Development</option>
+                                <option value="Node.js Backend Development">Node.js Backend Development</option>
+                                <option value="MongoDB Database Development">MongoDB Database Development</option>
+                                <option value="Express.js API Development">Express.js API Development</option>
+                                <option value="MERN for Beginners">MERN for Complete Beginners</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit-btn">Send Message</button>
+                        <div id="form-message" class="form-message"></div> <!-- Message display area -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918179423238?text=Hi%20Team%2C%20I%27m%20interested%20in%20your%20MERN%20Stack%20Development%20Course%20and%20would%20like%20to%20know%20more%20about%20the%20curriculum%20and%20batch%20timings."
+        class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer from index.html -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col about-col">
+                    <h3>FAANG Tech</h3>
+                    <p>Empowering the next generation of tech professionals with cutting-edge education in MERN stack development, full stack web development, and modern JavaScript frameworks.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html#home">Home</a></li>
+                        <li><a href="../index.html#about">About Us</a></li>
+                        <li><a href="../index.html#courses">Our Courses</a></li>
+                        <li><a href="https://codegym.cc/" target="_blank">CodeGym</a></li>
+                        <li><a href="../index.html#team">Our Team</a></li>
+                        <li><a href="../index.html#training-the-trainers">Trainers</a></li>
+                        <li><a href="../index.html#office-tour">Office Tour</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>MERN Specializations</h3>
+                    <ul>
+                        <li>React.js & Frontend Development</li>
+                        <li>Node.js & Backend APIs</li>
+                        <li>Express.js Framework</li>
+                        <li>MongoDB Database Design</li>
+                        <li>Full Stack Application Building</li>
+                        <li>Real-time Web Applications</li>
+                        <li>Authentication & Security</li>
+                        <li>Deployment & Cloud Hosting</li>
+                    </ul>
+                </div>
+                <div class="footer-col contact-footer-col">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt" style="color: #1877F2;"></i> 1st floor Lakshmipuram main road,
+                        opposite Sri patibandla sitaramaiah high school, Guntur</p>
+                    <p><i class="fas fa-envelope" style="color: #1877F2;"></i> learn@faangtechlab.com</p>
+                    <p><i class="fas fa-phone-alt" style="color: #1877F2;"></i>+91 8179423238</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/faangtechlab/?hl=en" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/faang-tech-lab-043855349/?originalSubdomain=in"
+                            target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FAANG Tech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 3. SEO CORE: Schema Markup (Enhanced for MERN Stack) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "FAANG Tech Lab Guntur - MERN Stack Development Institute",
+      "alternateName": ["Best MERN Stack Course Guntur", "Full Stack Development Training Institute Guntur"],
+      "description": "Premier MERN Stack development training institute in Guntur offering MongoDB, Express.js, React.js, and Node.js courses with hands-on projects and industry certification preparation.",
+      "url": "https://faangtechlab.com/mern-stack-development-course-guntur/",
+      "logo": "https://faangtechlab.com/assets/logo.jpg",
+      "image": "https://faangtechlab.com/assets/mern-stack-banner.jpg",
+      "telephone": "+918179423238",
+      "email": "learn@faangtechlab.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1st Floor Lakshmipuram main road, opposite Sri patibandla sitaramaiah high school",
+        "addressLocality": "Guntur",
+        "addressRegion": "Andhra Pradesh",
+        "postalCode": "522001",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "16.2893",
+        "longitude": "80.4364"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Guntur",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "Andhra Pradesh"
+        }
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "MERN Stack Development Courses",
+        "itemListElement": [
+          {
+            "@type": "Course",
+            "name": "MERN Stack Full Course",
+            "description": "Comprehensive MERN stack development course with MongoDB, Express.js, React.js, and Node.js",
+            "provider": {
+              "@type": "Organization",
+              "name": "FAANG Tech Lab"
+            }
+          },
+          {
+            "@type": "Course",
+            "name": "React.js Development",
+            "description": "Frontend development with React.js, hooks, and modern JavaScript",
+            "provider": {
+              "@type": "Organization",
+              "name": "FAANG Tech Lab"
+            }
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "150",
+        "bestRating": "5"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Rajesh Goud"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "reviewBody": "Best MERN stack course in Guntur! The hands-on projects really helped me understand full stack development."
+        }
+      ]
+    }
+    </script>
+
+    <!-- Additional SEO: FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the duration of the MERN Stack development course?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our comprehensive MERN Stack development course is 5 months long with 25+ hands-on full stack projects covering MongoDB, Express.js, React.js, and Node.js."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide job placement assistance for MERN Stack developers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we provide 100% placement assistance with resume building, interview preparation, and direct connections with companies looking for full stack MERN developers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this MERN Stack course suitable for complete beginners?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Our MERN Stack course starts with JavaScript fundamentals and progresses through each technology systematically, making it perfect for beginners."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What projects will I build in the MERN Stack course?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You'll build 25+ projects including e-commerce sites, social media apps, real-time chat applications, blog platforms, and portfolio websites using the complete MERN stack."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- EmailJS Integration -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("rWERztWm7Bzg3_Oph");
+        })();
+    </script>
+
+    <!-- Main JavaScript -->
+    <script src="../script.js"></script>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            const closeIcon = document.getElementById('close-icon');
+
+            if (mobileMenuButton) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                    menuIcon.classList.toggle('hidden');
+                    closeIcon.classList.toggle('hidden');
+                });
+            }
+
+            // Auto-scroll functionality for testimonials
+            const testimonialsContentWrapper = document.querySelector('#testimonials .codegym-content-wrapper');
+            let testimonialsScrollInterval;
+
+            const setupAutoScroll = (element, intervalIdVar) => {
+                if (!element) return;
+
+                clearInterval(window[intervalIdVar]);
+
+                window[intervalIdVar] = setInterval(() => {
+                    element.scrollLeft += 1;
+
+                    if (element.scrollLeft + element.clientWidth >= element.scrollWidth - 1) {
+                        element.scrollLeft = 0;
+                    }
+                }, 150);
+            };
+
+            const stopAutoScroll = (intervalIdVar) => {
+                clearInterval(window[intervalIdVar]);
+            };
+
+            // Start auto-scroll for testimonials
+            setupAutoScroll(testimonialsContentWrapper, 'testimonialsScrollInterval');
+
+            // Pause/Resume auto-scroll for testimonials on hover/touch
+            if (testimonialsContentWrapper) {
+                testimonialsContentWrapper.addEventListener('mouseover', () => stopAutoScroll('testimonialsScrollInterval'));
+                testimonialsContentWrapper.addEventListener('mouseout', () => setupAutoScroll(testimonialsContentWrapper, 'testimonialsScrollInterval'));
+                testimonialsContentWrapper.addEventListener('touchstart', () => stopAutoScroll('testimonialsScrollInterval'));
+                testimonialsContentWrapper.addEventListener('touchend', () => setupAutoScroll(testimonialsContentWrapper, 'testimonialsScrollInterval'));
+            }
+        });
+    </script>
+</body>
+
+</html>
