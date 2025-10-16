@@ -468,6 +468,19 @@ html[data-theme='dark'] .hero {
     margin-bottom: 5px;
 }
 
+/* Floating card logo styling */
+.floating-card .floating-logo {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+
+.floating-card:hover .floating-logo {
+    transform: scale(1.1);
+}
+
 .floating-elements .floating-card:nth-child(1) { grid-area: 1 / 1; align-self: start; justify-self: start; animation-delay: 0s; }
 .floating-elements .floating-card:nth-child(2) { grid-area: 1 / 2; align-self: start; justify-self: center; animation-delay: 1s; }
 .floating-elements .floating-card:nth-child(3) { grid-area: 1 / 3; align-self: start; justify-self: end; animation-delay: 2s; }
@@ -686,6 +699,23 @@ html[data-theme='dark'] .about {
     font-size: 3.5rem;
     color: var(--primary-color); /* About card icons use primary accent color */
     margin-bottom: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+/* About card icon image styling */
+.about-card .about-icon-image {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+
+.about-card:hover .about-icon-image {
+    transform: scale(1.1);
 }
 
 .about-card h3 {
@@ -761,6 +791,24 @@ html[data-theme='dark'] .courses {
     background-clip: text;
     color: transparent;
     margin-bottom: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+/* Course logo specific styling */
+.course-card .course-logo {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+    background: transparent;
+}
+
+.course-card:hover .course-logo {
+    transform: scale(1.1);
 }
 
 .course-card h3 {
@@ -1424,6 +1472,12 @@ html[data-theme='dark'] .form-message.error {
         margin-bottom: 4px;
     }
     
+    .floating-card .floating-logo {
+        width: 24px;
+        height: 24px;
+        margin-bottom: 4px;
+    }
+    
     .floating-card span {
         line-height: 1.2;
         text-align: center;
@@ -1573,6 +1627,17 @@ html[data-theme='dark'] .form-message.error {
     .course-card {
         width: 280px;
     }
+    
+    /* Responsive course logos for mobile */
+    .course-card .course-logo {
+        width: 56px;
+        height: 56px;
+    }
+    
+    .course-card .course-icon {
+        height: 70px;
+    }
+    
     .codegym-content {
         width: 350px;
     }
@@ -1628,6 +1693,12 @@ html[data-theme='dark'] .form-message.error {
         margin-bottom: 4px;
     }
     
+    .floating-card .floating-logo {
+        width: 22px;
+        height: 22px;
+        margin-bottom: 4px;
+    }
+    
     .floating-card span {
         line-height: 1.2;
         text-align: center;
@@ -1668,6 +1739,16 @@ html[data-theme='dark'] .form-message.error {
     
     .course-card, .codegym-content {
         min-width: 250px;
+    }
+    
+    /* Smaller course logos for very small screens */
+    .course-card .course-logo {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .course-card .course-icon {
+        height: 60px;
     }
     
     /* Contact section mobile fixes for 480px */
@@ -1720,6 +1801,12 @@ html[data-theme='dark'] .form-message.error {
         margin-bottom: 4px;
     }
     
+    .floating-card .floating-logo {
+        width: 21px;
+        height: 21px;
+        margin-bottom: 4px;
+    }
+    
     .floating-card span {
         line-height: 1.2;
         text-align: center;
@@ -1757,6 +1844,12 @@ html[data-theme='dark'] .form-message.error {
     
     .floating-card i {
         font-size: 1.1rem;
+        margin-bottom: 4px;
+    }
+    
+    .floating-card .floating-logo {
+        width: 20px;
+        height: 20px;
         margin-bottom: 4px;
     }
     
@@ -1800,6 +1893,12 @@ html[data-theme='dark'] .form-message.error {
         margin-bottom: 3px;
     }
     
+    .floating-card .floating-logo {
+        width: 19px;
+        height: 19px;
+        margin-bottom: 3px;
+    }
+    
     .floating-card span {
         line-height: 1.1;
         text-align: center;
@@ -1837,6 +1936,12 @@ html[data-theme='dark'] .form-message.error {
     
     .floating-card i {
         font-size: 1rem;
+        margin-bottom: 3px;
+    }
+    
+    .floating-card .floating-logo {
+        width: 18px;
+        height: 18px;
         margin-bottom: 3px;
     }
     
