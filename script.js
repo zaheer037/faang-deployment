@@ -300,4 +300,91 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // --- Promotional Popup Modal Functionality ---
+    const popupOverlay = document.getElementById('promotional-popup');
+    const popupModal = popupOverlay?.querySelector('.popup-modal');
+    const popupCloseBtn = popupOverlay?.querySelector('.popup-close');
+    
+    // Check if popup should be shown (once per session)
+    const popupShownKey = 'faang-popup-shown';
+    const popupShown = sessionStorage.getItem(popupShownKey);
+    
+    function showPopup() {
+        if (popupOverlay && !popupShown) {
+            popupOverlay.style.display = 'flex';
+            // Small delay to ensure display is set before adding show class
+            setTimeout(() => {
+                popupOverlay.classList.add('show');
+            }, 50);
+            
+            // Mark as shown in session storage
+            sessionStorage.setItem(popupShownKey, 'true');
+        }
+    }
+    
+    function hidePopup() {
+        if (popupOverlay) {
+            popupOverlay.classList.remove('show');
+            setTimeout(() => {
+                popupOverlay.style.display = 'none';
+            }, 400); // Match the CSS transition duration
+        }
+    }
+    
+    function redirectToContact() {
+        hidePopup();
+        // Small delay before redirect to allow close animation
+        setTimeout(() => {
+            const contactSection = document.querySelector('#contact');
+            if (contactSection) {
+                // Calculate offset for fixed header
+                const headerOffset = navbar.offsetHeight;
+                const offsetPosition = contactSection.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }, 500);
+    }
+    
+    // Show popup after 2-3 seconds delay (random between 2-3 seconds)
+    const showDelay = Math.random() * 1000 + 2000; // 2000-3000ms
+    setTimeout(showPopup, showDelay);
+    
+    // Close popup when clicking the close button
+    if (popupCloseBtn) {
+        popupCloseBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            hidePopup();
+        });
+    }
+    
+    // Close popup when clicking outside the modal
+    if (popupOverlay) {
+        popupOverlay.addEventListener('click', function(e) {
+            if (e.target === popupOverlay) {
+                hidePopup();
+            }
+        });
+    }
+    
+    // Redirect to contact when clicking on the modal (but not close button)
+    if (popupModal) {
+        popupModal.addEventListener('click', function(e) {
+            // Don't redirect if clicking the close button
+            if (!e.target.closest('.popup-close')) {
+                redirectToContact();
+            }
+        });
+    }
+    
+    // Close popup with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && popupOverlay && popupOverlay.classList.contains('show')) {
+            hidePopup();
+        }
+    });
 });
