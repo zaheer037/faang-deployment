@@ -183,24 +183,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Auto-scrolling for horizontal sections ---
     const setupAutoScroll = (element, intervalIdVar) => {
-        if (!element) return;
+        if (!element) {
+            console.warn(`Auto-scroll setup failed: Element not found for ${intervalIdVar}`);
+            return;
+        }
 
         // Clear any existing interval to prevent multiple scrolls
         clearInterval(window[intervalIdVar]);
 
-        window[intervalIdVar] = setInterval(() => {
-            element.scrollLeft += 1; // Scroll by 1 pixel
+        try {
+            window[intervalIdVar] = setInterval(() => {
+                if (element && element.scrollLeft !== undefined) {
+                    element.scrollLeft += 1; // Scroll by 1 pixel
 
-            // If scrolled to the end, reset to the beginning
-            // Add a small buffer (e.g., 1px) to prevent flickering at the end
-            if (element.scrollLeft + element.clientWidth >= element.scrollWidth - 1) {
-                element.scrollLeft = 0;
-            }
-        }, 20); // Adjust interval for speed (lower value = faster scroll)
+                    // If scrolled to the end, reset to the beginning
+                    // Add a small buffer (e.g., 1px) to prevent flickering at the end
+                    if (element.scrollLeft + element.clientWidth >= element.scrollWidth - 1) {
+                        element.scrollLeft = 0;
+                    }
+                }
+            }, 20); // Adjust interval for speed (lower value = faster scroll)
+        } catch (error) {
+            console.error(`Auto-scroll setup failed for ${intervalIdVar}:`, error);
+        }
     };
 
     const stopAutoScroll = (intervalIdVar) => {
-        clearInterval(window[intervalIdVar]);
+        if (window[intervalIdVar]) {
+            clearInterval(window[intervalIdVar]);
+            window[intervalIdVar] = null;
+        }
+    };
+
+    // Performance optimization: Only run auto-scroll when element is visible
+    const isElementVisible = (element) => {
+        if (!element) return false;
+        const rect = element.getBoundingClientRect();
+        return rect.top < window.innerHeight && rect.bottom > 0;
     };
 
     // Start auto-scroll for Courses Grid
@@ -270,10 +289,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     isValid = false;
                 }
 
-                // Basic phone number validation (10 digits, allowing for common formats)
-                const phoneRegex = /^[\+]?[1-9][\d]{9,14}$/;
-                if (!phoneRegex.test(phone.replace(/[\s\-\(\)]/g, ''))) {
-                    errorMessage += 'Please enter a valid phone number (10-15 digits). ';
+                // Enhanced phone number validation (supports international formats)
+                const cleanPhone = phone.replace(/[\s\-\(\)\+]/g, '');
+                const phoneRegex = /^[1-9]\d{7,14}$/; // 8-15 digits, no leading zero
+                if (!phoneRegex.test(cleanPhone)) {
+                    errorMessage += 'Please enter a valid phone number (8-15 digits). ';
                     isValid = false;
                 }
             }
