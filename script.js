@@ -356,17 +356,24 @@ document.addEventListener('DOMContentLoaded', () => {
         hidePopup();
         // Small delay before redirect to allow close animation
         setTimeout(() => {
-            const contactSection = document.querySelector('#contact');
-            if (contactSection) {
-                // Calculate offset for fixed header
-                const headerOffset = navbar.offsetHeight;
-                const offsetPosition = contactSection.getBoundingClientRect().top + window.pageYOffset - headerOffset;
-
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
-            }
+            // Create WhatsApp message with appropriate pre-text
+            const phoneNumber = '+918179423238';
+            const message = encodeURIComponent(
+                '🎓 Hello FAANG Tech Lab!\n\n' +
+                'I saw your promotional offer and I\'m interested in learning more about your courses. ' +
+                'Could you please provide me with details about:\n\n' +
+                '• Available courses and batches\n' +
+                '• Course fees and duration\n' +
+                '• Placement assistance\n' +
+                '• Next batch starting dates\n\n' +
+                'Thank you!'
+            );
+            
+            // Create WhatsApp URL
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+            
+            // Open WhatsApp in a new tab
+            window.open(whatsappUrl, '_blank');
         }, 500);
     }
     
