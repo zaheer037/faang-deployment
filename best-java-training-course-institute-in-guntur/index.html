@@ -80,12 +80,15 @@
             border: 1px solid #d2e4f7;
             color: #3b82f6;
             transition: all 0.2s;
-            width: 280px; /* Fixed width for all skill tags */
-            min-height: 40px; /* Fixed minimum height */
+            width: 280px;
+            /* Fixed width for all skill tags */
+            min-height: 40px;
+            /* Fixed minimum height */
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            flex-shrink: 0; /* Prevent shrinking */
+            flex-shrink: 0;
+            /* Prevent shrinking */
         }
 
         .skill-tag:hover {
@@ -126,7 +129,8 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             border-top: 4px solid #3b82f6;
             white-space: normal;
-            min-height: 200px; /* Ensure consistent height */
+            min-height: 200px;
+            /* Ensure consistent height */
         }
 
         /* Ensure testimonial content wraps properly */
@@ -171,305 +175,328 @@
             </div>
         </div>
     </nav>
-        <!-- 4. H1 & Hero Section (Matching clean UI and color scheme) -->
-        <section class="w-full text-center py-20 md:py-32 contact">
-            <div class="max-w-5xl mx-auto px-4">
-                <!-- Modern H1 with cleaner styling -->
-                <h1 class="text-4xl md:text-4xl font-black mb-6 leading-tight text-gray-900 tracking-tight">
-                    Guntur's Leading Java Programming Course: <br>
-                    <span class="text-[#1A237E]">Master Core Java Fundamentals </span>
-                </h1>
-                
-                <!-- Cleaner subtitle -->
-                <p class="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto font-light leading-relaxed">
-                    Build industry-ready skills without wrestling with outdated tutorials, our comprehensive program handles the heavy lifting so you can land your dream job faster.
-                </p>
-                
-                <!-- Modern dual CTA buttons -->
-                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <a href="#contact" 
-                       class="bg-[#1A237E] hover:bg-[#0F1654] text-white font-semibold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-                        Get Started
-                    </a>
+    <!-- 4. H1 & Hero Section (Matching clean UI and color scheme) -->
+    <section class="w-full text-center py-20 md:py-32 contact">
+        <div class="max-w-5xl mx-auto px-4">
+            <!-- Modern H1 with cleaner styling -->
+            <h1 class="text-4xl md:text-4xl font-black mb-6 leading-tight text-gray-900 tracking-tight">
+                Guntur's Leading Java Programming Course: <br>
+                <span class="text-[#1A237E]">Master Core Java Fundamentals </span>
+            </h1>
+
+            <!-- Cleaner subtitle -->
+            <p class="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto font-light leading-relaxed">
+                Build industry-ready skills without wrestling with outdated tutorials, our comprehensive program handles
+                the heavy lifting so you can land your dream job faster.
+            </p>
+
+            <!-- Modern dual CTA buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#contact"
+                    class="bg-[#1A237E] hover:bg-[#0F1654] text-white font-semibold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Skills Covered Section (Matching the Skills Tag Cloud UI Example) -->
+    <section class="w-full py-12 contact">
+        <div class="max-w-6xl mx-auto px-4 ui-section-bg">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800 text-center">
+                <span class="heading-underline">Skills Covered In JAVA</span>
+            </h2>
+
+            <!-- Responsiveness: Grid layout for consistent skill tag sizing -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+                <!-- Checkmark icons are now changed to the new color #1A237E -->
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Java Fundamentals & Syntax</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Variables & Data Types</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> IntelliJ IDEA & Keyboard
+                    Input</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Conditional Operators & Logic</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Loops & Iterations</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Arrays & 2D Arrays</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Functions & String
+                    Manipulation</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Object-Oriented Programming
+                    (OOP)</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Classes, Objects & Static
+                    Methods</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Collections & Generics</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Advanced Collections
+                    Framework</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Exception Handling &
+                    Debugging</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> File I/O & Stream Processing</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Date/Time API & Git Version
+                    Control</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Project Development &
+                    Implementation</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Key Features Grid (Matching the Key Features UI Example) -->
+    <section class="w-full py-12 contact">
+        <div class="max-w-6xl mx-auto px-4 ui-section-bg">
+            <h2 class="text-2xl font-bold mb-8 text-gray-800 text-center">
+                <span class="heading-underline">JAVA Training Key Features</span>
+            </h2>
+
+            <!-- Responsiveness: Grid adapts from 2 columns (mobile) to 3 columns (tablet/desktop) -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- Feature Card 1: Practical Hours -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-laptop-code text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">30+ Hrs Practical Sessions</span>
+                </div>
+                <!-- Feature Card 2: Resume Building -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-file-alt text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">Professional Resume building</span>
+                </div>
+                <!-- Feature Card 3: Placement Focus -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-handshake text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">Assured Job Placement Support</span>
+                </div>
+                <!-- Feature Card 4: Local Expert -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-calendar-alt text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">Weekdays & Weekend Classes</span>
+                </div>
+                <!-- Feature Card 5: Local Training (Unique Guntur Benefit) -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-user-shield text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">Guaranteed Interviews</span>
+                </div>
+                <!-- Feature Card 6: Flexible Payments -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-money-bill-wave text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">Flexible Payment Plans</span>
+                </div>
+                <!-- Feature Card 7: Dedicated Mentor -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-microphone-alt text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">Interview Preparation Sessions</span>
+                </div>
+                <!-- Feature Card 8: Industry Experts -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-users text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">Delivered by Industry Experts</span>
+                </div>
+                <!-- Feature Card 9: Practice -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-edit text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">Weekly Practice Assignments</span>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- 6. Skills Covered Section (Matching the Skills Tag Cloud UI Example) -->
-        <section class="w-full py-12 contact">
-            <div class="max-w-6xl mx-auto px-4 ui-section-bg">
-                <h2 class="text-2xl font-bold mb-6 text-gray-800 text-center">
-                    <span class="heading-underline">Skills Covered In JAVA</span>
-                </h2>
+    <!-- 7. Testimonials Section with Continuous Scrolling -->
+    <section id="testimonials" class="w-full py-12 contact">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-8 text-gray-800 text-center">
+                <span class="heading-underline">Hear From Our Guntur Graduates</span>
+            </h2>
 
-                <!-- Responsiveness: Grid layout for consistent skill tag sizing -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
-                    <!-- Checkmark icons are now changed to the new color #1A237E -->
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Java Fundamentals & Syntax</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Variables & Data Types</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> IntelliJ IDEA & Keyboard Input</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Conditional Operators & Logic</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Loops & Iterations</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Arrays & 2D Arrays</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Functions & String Manipulation</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Object-Oriented Programming (OOP)</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Classes, Objects & Static Methods</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Collections & Generics</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Advanced Collections Framework</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Exception Handling & Debugging</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> File I/O & Stream Processing</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Date/Time API & Git Version Control</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Project Development & Implementation</span>
+            <!-- Horizontal Scrolling Testimonials Container (using index.html method) -->
+            <div class="codegym-content-wrapper">
+                <!-- Testimonial Card 1 -->
+                <div class="testimonial-card">
+                    <div class="flex items-start mb-4">
+                        <img src="https://placehold.co/60x60/3b82f6/ffffff?text=SS" alt="Sudheendra Sripada"
+                            class="rounded-full w-14 h-14 object-cover mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">Sudheendra Sripada</p>
+                            <p class="text-sm text-gray-500">FAANG Student</p>
+                            <div class="text-yellow-500 text-lg">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        "My confidence grew significantly after completing this program. The practical Java sessions,
+                        resume building, and mock interviews were so focused on real industry needs. I landed a
+                        high-paying role in Hyderabad within 4 months."
+                    </p>
+                </div>
+
+                <!-- Testimonial Card 2 -->
+                <div class="testimonial-card">
+                    <div class="flex items-start mb-4">
+                        <img src="https://placehold.co/60x60/3b82f6/ffffff?text=HD" alt="Harika Davuluri"
+                            class="rounded-full w-14 h-14 object-cover mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">Harika Davuluri</p>
+                            <p class="text-sm text-gray-500">FAANG Student</p>
+                            <div class="text-yellow-500 text-lg">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        "FAANG Tech Lab gave me the right mix of coding knowledge and confidence. The resume sessions
+                        and mock interviews were very specific to current trends. I secured a great job in Hyderabad
+                        within 4 months."
+                    </p>
+                </div>
+
+                <!-- Testimonial Card 3 -->
+                <div class="testimonial-card">
+                    <div class="flex items-start mb-4">
+                        <img src="https://placehold.co/60x60/3b82f6/ffffff?text=RD" alt="Rakesh Dhulipalla"
+                            class="rounded-full w-14 h-14 object-cover mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">Rakesh Dhulipalla</p>
+                            <p class="text-sm text-gray-500">FAANG Student</p>
+                            <div class="text-yellow-500 text-lg">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        "My confidence grew with every session at FAANG Tech Lab. The mentors guided me with real-time
+                        projects, resume prep, and interview practice. I got a high-paying job in Hyderabad within 4
+                        months."
+                    </p>
+                </div>
+
+                <!-- Testimonial Card 4 -->
+                <div class="testimonial-card">
+                    <div class="flex items-start mb-4">
+                        <img src="https://placehold.co/60x60/3b82f6/ffffff?text=HK" alt="Himabindu Karna"
+                            class="rounded-full w-14 h-14 object-cover mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">Himabindu Karna</p>
+                            <p class="text-sm text-gray-500">FAANG Student</p>
+                            <div class="text-yellow-500 text-lg">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        "This program helped me grow from basics to advanced coding with ease. The resume building and
+                        mock interviews were industry-level. I got placed in a reputed company in Hyderabad within 4
+                        months."
+                    </p>
+                </div>
+
+                <!-- Testimonial Card 5 -->
+                <div class="testimonial-card">
+                    <div class="flex items-start mb-4">
+                        <img src="https://placehold.co/60x60/3b82f6/ffffff?text=AK" alt="Ajay Kumar"
+                            class="rounded-full w-14 h-14 object-cover mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">Ajay Kumar</p>
+                            <p class="text-sm text-gray-500">FAANG Student</p>
+                            <div class="text-yellow-500 text-lg">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        "My confidence grew significantly after completing this course. The personalized guidance,
+                        resume prep, and mock interviews helped me a lot. I landed a high-paying Java developer role
+                        within 4 months."
+                    </p>
+                </div>
+
+                <!-- Testimonial Card 6 -->
+                <div class="testimonial-card">
+                    <div class="flex items-start mb-4">
+                        <img src="https://placehold.co/60x60/3b82f6/ffffff?text=RC" alt="Revathi Chatragadda"
+                            class="rounded-full w-14 h-14 object-cover mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">Revathi Chatragadda</p>
+                            <p class="text-sm text-gray-500">FAANG Student</p>
+                            <div class="text-yellow-500 text-lg">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        "FAANG Tech Lab transformed my coding journey completely. The resume building and mock
+                        interviews were highly practical and job-oriented. I got a great role in Hyderabad within 4
+                        months."
+                    </p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- 5. Key Features Grid (Matching the Key Features UI Example) -->
-        <section class="w-full py-12 contact">
-            <div class="max-w-6xl mx-auto px-4 ui-section-bg">
-                <h2 class="text-2xl font-bold mb-8 text-gray-800 text-center">
-                    <span class="heading-underline">JAVA Training Key Features</span>
-                </h2>
-
-                <!-- Responsiveness: Grid adapts from 2 columns (mobile) to 3 columns (tablet/desktop) -->
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                    <!-- Feature Card 1: Practical Hours -->
-                    <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
-                        <i class="fas fa-laptop-code text-xl mr-3"></i>
-                        <span class="font-semibold text-gray-700">30+ Hrs Practical Sessions</span>
+    <!-- Contact Section from index.html -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Get in Touch</h2>
+                <p>We'd love to hear from you! Reach out for any inquiries or to book a free demo.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+                    <h3>Contact Details</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 1st floor Lakshmipuram main road, opposite Sri patibandla
+                        sitaramaiah high school, Guntur</p>
+                    <p><i class="fas fa-envelope"></i> learn@faangtechlab.com</p>
+                    <p><i class="fas fa-phone-alt"></i>+91 8179423238</p>
+                    <p><i class="fas fa-globe"></i> <a href="https://faangtechlab.com" target="_blank"
+                            rel="noopener noreferrer">faangtechlab.com</a></p>
+                    <p><i class="fas fa-clock"></i> Always open</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/faangtechlab/?hl=en" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/faang-tech-lab-043855349/?originalSubdomain=in"
+                            target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
                     </div>
-                    <!-- Feature Card 2: Resume Building -->
-                    <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
-                        <i class="fas fa-file-alt text-xl mr-3"></i>
-                        <span class="font-semibold text-gray-700">Professional Resume building</span>
-                    </div>
-                    <!-- Feature Card 3: Placement Focus -->
-                    <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
-                        <i class="fas fa-handshake text-xl mr-3"></i>
-                        <span class="font-semibold text-gray-700">Assured Job Placement Support</span>
-                    </div>
-                    <!-- Feature Card 4: Local Expert -->
-                    <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
-                        <i class="fas fa-calendar-alt text-xl mr-3"></i>
-                        <span class="font-semibold text-gray-700">Weekdays & Weekend Classes</span>
-                    </div>
-                    <!-- Feature Card 5: Local Training (Unique Guntur Benefit) -->
-                    <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
-                        <i class="fas fa-user-shield text-xl mr-3"></i>
-                        <span class="font-semibold text-gray-700">Guaranteed Interviews</span>
-                    </div>
-                    <!-- Feature Card 6: Flexible Payments -->
-                    <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
-                        <i class="fas fa-money-bill-wave text-xl mr-3"></i>
-                        <span class="font-semibold text-gray-700">Flexible Payment Plans</span>
-                    </div>
-                    <!-- Feature Card 7: Dedicated Mentor -->
-                    <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
-                        <i class="fas fa-microphone-alt text-xl mr-3"></i>
-                        <span class="font-semibold text-gray-700">Interview Preparation Sessions</span>
-                    </div>
-                    <!-- Feature Card 8: Industry Experts -->
-                    <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
-                        <i class="fas fa-users text-xl mr-3"></i>
-                        <span class="font-semibold text-gray-700">Delivered by Industry Experts</span>
-                    </div>
-                    <!-- Feature Card 9: Practice -->
-                    <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
-                        <i class="fas fa-edit text-xl mr-3"></i>
-                        <span class="font-semibold text-gray-700">Weekly Practice Assignments</span>
-                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left" data-aos-delay="200">
+                    <h3>Send Us a Message</h3>
+                    <form action="#" method="POST" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="from_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="from_email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="from_phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="course">Course Interested</label>
+                            <select id="course" name="course_interested" required>
+                                <option value="">Select a course...</option>
+                                <option value="Java Programming" selected>Java Programming</option>
+                                <option value="Data Structures & Algorithms">Data Structures & Algorithms</option>
+                                <option value="Cybersecurity">Cybersecurity</option>
+                                <option value="Python Programming">Python Programming</option>
+                                <option value="MER(A)N Stack Development">MER(A)N Stack Development</option>
+                                <option value="Git & GitHub Mastery">Git & GitHub Mastery</option>
+                                <option value="Spring Boot Framework">Spring Boot Framework</option>
+                                <option value="AI">Artificial Intelligence (AI)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit-btn">Send Message</button>
+                        <div id="form-message" class="form-message"></div> <!-- Message display area -->
+                    </form>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- 7. Testimonials Section with Continuous Scrolling -->
-        <section id="testimonials" class="w-full py-12 contact">
-            <div class="max-w-6xl mx-auto px-4">
-                <h2 class="text-2xl font-bold mb-8 text-gray-800 text-center">
-                    <span class="heading-underline">Hear From Our Guntur Graduates</span>
-                </h2>
-
-                <!-- Horizontal Scrolling Testimonials Container (using index.html method) -->
-                <div class="codegym-content-wrapper">
-                    <!-- Testimonial Card 1 -->
-                    <div class="testimonial-card">
-                        <div class="flex items-start mb-4">
-                            <img src="https://placehold.co/60x60/3b82f6/ffffff?text=SS" alt="Sudheendra Sripada"
-                                class="rounded-full w-14 h-14 object-cover mr-4">
-                            <div>
-                                <p class="font-semibold text-gray-800">Sudheendra Sripada</p>
-                                <p class="text-sm text-gray-500">FAANG Student</p>
-                                <div class="text-yellow-500 text-lg">★★★★★</div>
-                            </div>
-                        </div>
-                        <p class="text-gray-700 text-sm">
-                            "My confidence grew significantly after completing this program. The practical Java sessions, resume building, and mock interviews were so focused on real industry needs. I landed a high-paying role in Hyderabad within 4 months."
-                        </p>
-                    </div>
-
-                    <!-- Testimonial Card 2 -->
-                    <div class="testimonial-card">
-                        <div class="flex items-start mb-4">
-                            <img src="https://placehold.co/60x60/3b82f6/ffffff?text=HD" alt="Harika Davuluri"
-                                class="rounded-full w-14 h-14 object-cover mr-4">
-                            <div>
-                                <p class="font-semibold text-gray-800">Harika Davuluri</p>
-                                <p class="text-sm text-gray-500">FAANG Student</p>
-                                <div class="text-yellow-500 text-lg">★★★★★</div>
-                            </div>
-                        </div>
-                        <p class="text-gray-700 text-sm">
-                            "FAANG Tech Lab gave me the right mix of coding knowledge and confidence. The resume sessions and mock interviews were very specific to current trends. I secured a great job in Hyderabad within 4 months."
-                        </p>
-                    </div>
-
-                    <!-- Testimonial Card 3 -->
-                    <div class="testimonial-card">
-                        <div class="flex items-start mb-4">
-                            <img src="https://placehold.co/60x60/3b82f6/ffffff?text=RD" alt="Rakesh Dhulipalla"
-                                class="rounded-full w-14 h-14 object-cover mr-4">
-                            <div>
-                                <p class="font-semibold text-gray-800">Rakesh Dhulipalla</p>
-                                <p class="text-sm text-gray-500">FAANG Student</p>
-                                <div class="text-yellow-500 text-lg">★★★★★</div>
-                            </div>
-                        </div>
-                        <p class="text-gray-700 text-sm">
-                            "My confidence grew with every session at FAANG Tech Lab. The mentors guided me with real-time projects, resume prep, and interview practice. I got a high-paying job in Hyderabad within 4 months."
-                        </p>
-                    </div>
-
-                    <!-- Testimonial Card 4 -->
-                    <div class="testimonial-card">
-                        <div class="flex items-start mb-4">
-                            <img src="https://placehold.co/60x60/3b82f6/ffffff?text=HK" alt="Himabindu Karna"
-                                class="rounded-full w-14 h-14 object-cover mr-4">
-                            <div>
-                                <p class="font-semibold text-gray-800">Himabindu Karna</p>
-                                <p class="text-sm text-gray-500">FAANG Student</p>
-                                <div class="text-yellow-500 text-lg">★★★★★</div>
-                            </div>
-                        </div>
-                        <p class="text-gray-700 text-sm">
-                            "This program helped me grow from basics to advanced coding with ease. The resume building and mock interviews were industry-level. I got placed in a reputed company in Hyderabad within 4 months."
-                        </p>
-                    </div>
-
-                    <!-- Testimonial Card 5 -->
-                    <div class="testimonial-card">
-                        <div class="flex items-start mb-4">
-                            <img src="https://placehold.co/60x60/3b82f6/ffffff?text=AK" alt="Ajay Kumar"
-                                class="rounded-full w-14 h-14 object-cover mr-4">
-                            <div>
-                                <p class="font-semibold text-gray-800">Ajay Kumar</p>
-                                <p class="text-sm text-gray-500">FAANG Student</p>
-                                <div class="text-yellow-500 text-lg">★★★★★</div>
-                            </div>
-                        </div>
-                        <p class="text-gray-700 text-sm">
-                            "My confidence grew significantly after completing this course. The personalized guidance, resume prep, and mock interviews helped me a lot. I landed a high-paying Java developer role within 4 months."
-                        </p>
-                    </div>
-
-                    <!-- Testimonial Card 6 -->
-                    <div class="testimonial-card">
-                        <div class="flex items-start mb-4">
-                            <img src="https://placehold.co/60x60/3b82f6/ffffff?text=RC" alt="Revathi Chatragadda"
-                                class="rounded-full w-14 h-14 object-cover mr-4">
-                            <div>
-                                <p class="font-semibold text-gray-800">Revathi Chatragadda</p>
-                                <p class="text-sm text-gray-500">FAANG Student</p>
-                                <div class="text-yellow-500 text-lg">★★★★★</div>
-                            </div>
-                        </div>
-                        <p class="text-gray-700 text-sm">
-                            "FAANG Tech Lab transformed my coding journey completely. The resume building and mock interviews were highly practical and job-oriented. I got a great role in Hyderabad within 4 months."
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section from index.html -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <div class="section-header" data-aos="fade-up">
-                    <h2>Get in Touch</h2>
-                    <p>We'd love to hear from you! Reach out for any inquiries or to book a free demo.</p>
-                </div>
-                <div class="contact-content">
-                    <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
-                        <h3>Contact Details</h3>
-                        <p><i class="fas fa-map-marker-alt"></i> 1st floor Lakshmipuram main road, opposite Sri patibandla sitaramaiah high school, Guntur</p>
-                        <p><i class="fas fa-envelope"></i> learn@faangtechlab.com</p>
-                        <p><i class="fas fa-phone-alt"></i>+91 8179423238</p>
-                        <p><i class="fas fa-globe"></i> <a href="https://faangtechlab.com" target="_blank"
-                                rel="noopener noreferrer">faangtechlab.com</a></p>
-                        <p><i class="fas fa-clock"></i> Always open</p>
-                        <div class="social-links">
-                            <a href="https://www.instagram.com/faangtechlab/?hl=en" target="_blank"
-                                rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/faang-tech-lab-043855349/?originalSubdomain=in"
-                                target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="contact-form" data-aos="fade-left" data-aos-delay="200">
-                        <h3>Send Us a Message</h3>
-                        <form action="#" method="POST" id="contactForm">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="from_name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="from_email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="from_phone" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="course">Course Interested</label>
-                                <select id="course" name="course_interested" required>
-                                    <option value="">Select a course...</option>
-                                    <option value="Java Programming">Java Programming</option>
-                                    <option value="Data Structures & Algorithms">Data Structures & Algorithms</option>
-                                    <option value="Cybersecurity">Cybersecurity</option>
-                                    <option value="MER(A)N Stack Development">MER(A)N Stack Development</option>
-                                    <option value="Git & GitHub Mastery">Git & GitHub Mastery</option>
-                                    <option value="Spring Boot Framework">Spring Boot Framework</option>
-                                    <option value="AI">AI</option>
-                                </select>
-                            </div>
-                            <button type="submit" class="btn btn-primary form-submit-btn">Send Message</button>
-                            <div id="form-message" class="form-message"></div> <!-- Message display area -->
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- WhatsApp Floating Button -->
-        <a href="https://wa.me/918179423238?text=Hi%20Team%2C%20I%27m%20interested%20in%20your%20Courses."
-            class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-        </a>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918179423238?text=Hi%20Team%2C%20I%27m%20interested%20in%20your%20Courses."
+        class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
 
     <!-- Footer from index.html -->
@@ -550,9 +577,9 @@
     <!-- EmailJS Integration -->
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
-        (function () {
-            emailjs.init("rWERztWm7Bzg3_Oph"); // Updated with new account's public key
-        })();
+            (function () {
+                emailjs.init("rWERztWm7Bzg3_Oph"); // Updated with new account's public key
+            })();
     </script>
 
     <!-- Main JavaScript -->
@@ -560,14 +587,14 @@
 
     <!-- Mobile Menu Toggle Script -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
             const menuIcon = document.getElementById('menu-icon');
             const closeIcon = document.getElementById('close-icon');
 
             if (mobileMenuButton) {
-                mobileMenuButton.addEventListener('click', function() {
+                mobileMenuButton.addEventListener('click', function () {
                     mobileMenu.classList.toggle('hidden');
                     menuIcon.classList.toggle('hidden');
                     closeIcon.classList.toggle('hidden');

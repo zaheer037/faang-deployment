@@ -360,7 +360,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const phoneNumber = '+918179423238';
             const message = encodeURIComponent(
                 '🎓 Hello FAANG Tech Lab!\n\n' +
-                'I saw your promotional offer and I\'m interested in learning more about your courses. ' +
+                'I saw your Java promotional offer and I\'m interested in learning more about your courses. ' +
                 'Could you please provide me with details about:\n\n' +
                 '• Available courses and batches\n' +
                 '• Course fees and duration\n' +
