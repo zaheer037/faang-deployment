@@ -108,12 +108,13 @@
             border: 1px solid #d2e4f7;
             color: #3b82f6;
             transition: all 0.2s;
-            width: 280px; /* Fixed width for all skill tags */
+            width: 100%; /* Full width within grid cell */
             min-height: 40px; /* Fixed minimum height */
             display: flex;
             align-items: center;
             justify-content: flex-start;
             flex-shrink: 0; /* Prevent shrinking */
+            margin: 0 auto; /* Center the tag */
         }
 
         .skill-tag:hover {
@@ -187,6 +188,21 @@
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
+        }
+
+        /* Mobile-specific adjustments for skill tags */
+        @media (max-width: 640px) {
+            .skill-tag {
+                max-width: 100%;
+                margin: 0 auto;
+                justify-content: center;
+                text-align: center;
+            }
+            
+            /* Ensure grid container has proper padding on mobile */
+            .ui-section-bg {
+                padding: 2rem 1rem;
+            }
         }
     </style>
 </head>
@@ -270,7 +286,7 @@
             </h2>
 
             <!-- Responsiveness: Grid layout for consistent skill tag sizing -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 justify-items-center">
                 <!-- Python specific skills with check icons -->
                 <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
                         class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Python Fundamentals & Syntax</span>
