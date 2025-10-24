@@ -80,13 +80,17 @@
             border: 1px solid #d2e4f7;
             color: #3b82f6;
             transition: all 0.2s;
-            width: 100%; /* Full width within grid cell */
-            min-height: 40px; /* Fixed minimum height */
+            width: 100%;
+            /* Full width within grid cell */
+            min-height: 40px;
+            /* Fixed minimum height */
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            flex-shrink: 0; /* Prevent shrinking */
-            margin: 0 auto; /* Center the tag */
+            flex-shrink: 0;
+            /* Prevent shrinking */
+            margin: 0 auto;
+            /* Center the tag */
         }
 
         .skill-tag:hover {
@@ -127,7 +131,8 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             border-top: 4px solid #3b82f6;
             white-space: normal;
-            min-height: 200px; /* Ensure consistent height */
+            min-height: 200px;
+            /* Ensure consistent height */
         }
 
         /* Ensure testimonial content wraps properly */
@@ -144,7 +149,7 @@
                 justify-content: center;
                 text-align: center;
             }
-            
+
             /* Ensure grid container has proper padding on mobile */
             .ui-section-bg {
                 padding: 2rem 1rem;
@@ -187,293 +192,298 @@
             </div>
         </div>
     </nav>
-        <!-- 4. H1 & Hero Section (Matching clean UI and color scheme) -->
-        <section class="w-full text-center py-20 md:py-32 contact">
-            <div class="max-w-5xl mx-auto px-4">
-                <!-- Modern H1 with cleaner styling -->
-                <h1 class="text-4xl md:text-4xl font-black mb-6 leading-tight text-gray-900 tracking-tight">
-                    Guntur's Leading DSA Training Institute: <br>
-                    <span class="text-[#1A237E]">Master Data Structures &Algorithms</span>
-                </h1>
-                
-                <!-- Cleaner subtitle -->
-                <p class="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto font-light leading-relaxed">
-                    Build algorithmic thinking and problem-solving skills with pseudocode mastery. Our comprehensive DSA program prepares you for FAANG interviews and competitive programming.
-                </p>
-                
-                <!-- Modern dual CTA buttons -->
-                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <a href="#contact" 
-                       class="bg-[#1A237E] hover:bg-[#0F1654] text-white font-semibold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-                        Start Learning DSA
-                    </a>
+    <!-- 4. H1 & Hero Section (Matching clean UI and color scheme) -->
+    <section class="w-full text-center py-20 md:py-32 contact">
+        <div class="max-w-5xl mx-auto px-4">
+            <!-- Modern H1 with cleaner styling -->
+            <h1 class="text-4xl md:text-4xl font-black mb-6 leading-tight text-gray-900 tracking-tight">
+                Guntur's Leading DSA Training Institute: <br>
+                <span class="text-[#1A237E]">Master Data Structures &Algorithms</span>
+            </h1>
+
+            <!-- Cleaner subtitle -->
+            <p class="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto font-light leading-relaxed">
+                Build algorithmic thinking and problem-solving skills with pseudocode mastery. Our comprehensive DSA
+                program prepares you for FAANG interviews and competitive programming.
+            </p>
+
+            <!-- Modern dual CTA buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#contact"
+                    class="bg-[#1A237E] hover:bg-[#0F1654] text-white font-semibold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                    Start Learning DSA
+                </a>
+                <a href="../assets/dsa_brochure.pdf" target="_blank"
+                    class="border-2 border-[#1A237E] text-[#1A237E] hover:bg-[#1A237E] hover:text-white font-semibold py-4 px-8 rounded-full text-lg transition-all duration-300">
+                    View Brochure
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Skills Covered Section (Matching the Skills Tag Cloud UI Example) -->
+    <section class="w-full py-12 contact">
+        <div class="max-w-6xl mx-auto px-4 ui-section-bg">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800 text-center">
+                <span class="heading-underline">Topics Covered In DSA Training</span>
+            </h2>
+
+            <!-- Responsiveness: Grid layout for consistent skill tag sizing -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 justify-items-center">
+                <!-- Checkmark icons are now changed to the new color #1A237E -->
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Foundations & Time Complexity</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Arrays, Two Pointers & Sliding Window Techniques</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Sorting Algorithms & Searching Techniques</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Hashing & Prefix Sum</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Stacks, Queues, & Advanced Applications</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Linked Lists</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Recursion & Backtracking</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Dynamic Programming</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Graph Algorithms (BFS, DFS, Shortest Paths)</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Trees, Binary Search Trees, & AVL Trees</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Advanced Data Structures (Tries, Heaps, Priority Queues)</span>
+                <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
+                        class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Competitive Programming Topics (Bit Manipulation, Math, Game Theory)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Key Features Grid (Matching the Key Features UI Example) -->
+    <section class="w-full py-12 contact">
+        <div class="max-w-6xl mx-auto px-4 ui-section-bg">
+            <h2 class="text-2xl font-bold mb-8 text-gray-800 text-center">
+                <span class="heading-underline">DSA Training Key Features</span>
+            </h2>
+
+            <!-- Responsiveness: Grid adapts from 2 columns (mobile) to 3 columns (tablet/desktop) -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- Feature Card 1: Algorithm Practice -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-code text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">40+ Algorithm Practice Sessions</span>
+                </div>
+                <!-- Feature Card 2: Pseudocode Focus -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-file-code text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">Pseudocode Writing Mastery</span>
+                </div>
+                <!-- Feature Card 3: Interview Prep -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-handshake text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">FAANG Interview Preparation</span>
+                </div>
+                <!-- Feature Card 4: Flexible Schedule -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-calendar-alt text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">Weekend & Evening Batches</span>
+                </div>
+                <!-- Feature Card 5: Problem Solving -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-brain text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">Algorithmic Thinking Development</span>
+                </div>
+                <!-- Feature Card 6: Mock Tests -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-clipboard-check text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">Weekly Algorithm Assessments</span>
+                </div>
+                <!-- Feature Card 7: Visual Learning -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-project-diagram text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">Visual Algorithm Demonstrations</span>
+                </div>
+                <!-- Feature Card 8: Expert Mentors -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-users text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">FAANG Alumni Mentors</span>
+                </div>
+                <!-- Feature Card 9: Competitive Programming -->
+                <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
+                    <i class="fas fa-trophy text-xl mr-3"></i>
+                    <span class="font-semibold text-gray-700">Competitive Programming Training</span>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- 6. Skills Covered Section (Matching the Skills Tag Cloud UI Example) -->
-        <section class="w-full py-12 contact">
-            <div class="max-w-6xl mx-auto px-4 ui-section-bg">
-                <h2 class="text-2xl font-bold mb-6 text-gray-800 text-center">
-                    <span class="heading-underline">Topics Covered In DSA Training</span>
-                </h2>
+    <!-- 7. Testimonials Section with Continuous Scrolling -->
+    <section id="testimonials" class="w-full py-12 contact">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-8 text-gray-800 text-center">
+                <span class="heading-underline">Success Stories from DSA Graduates</span>
+            </h2>
 
-                <!-- Responsiveness: Grid layout for consistent skill tag sizing -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 justify-items-center">
-                    <!-- Checkmark icons are now changed to the new color #1A237E -->
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Algorithm Analysis & Big O Notation</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Pseudocode Writing Techniques</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Arrays & Matrix Operations</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Linked Lists & Dynamic Memory</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Stack Implementation</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Queues Implementation</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Binary Trees & Tree Traversals</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Binary Search Trees & AVL Trees</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Recursion & Backtracking</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Graph Algorithms (BFS, DFS)</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Hash Tables & Collision Handling</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Searching Techniques & Patterns</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Sorting Algorithms</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Dynamic Programming</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Greedy Algorithms</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> String Algorithms & Pattern Matching</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Interview Problem Solving Strategies</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Heap Data Structure</span>
-                    <span class="skill-tag text-sm font-semibold py-2 px-4 rounded-md"><i
-                            class="fas fa-check text-[#1A237E] mr-2 flex-shrink-0"></i> Priority Queues</span>
+            <!-- Horizontal Scrolling Testimonials Container (using index.html method) -->
+            <div class="codegym-content-wrapper">
+                <!-- Testimonial Card 1 -->
+                <div class="testimonial-card">
+                    <div class="flex items-start mb-4">
+                        <img src="https://placehold.co/60x60/3b82f6/ffffff?text=SR" alt="Sanjana Reddy"
+                            class="rounded-full w-14 h-14 object-cover mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">Sanjana Reddy</p>
+                            <p class="text-sm text-gray-500">FAANG Student</p>
+                            <div class="text-yellow-500 text-lg">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        "The DSA course at FAANG Tech Lab helped me understand concepts clearly with real examples. The
+                        trainers explain logic step by step and the code-gym practice made problem solving easier. I
+                        feel more confident tackling interviews now."
+                    </p>
+                </div>
+
+                <!-- Testimonial Card 2 -->
+                <div class="testimonial-card">
+                    <div class="flex items-start mb-4">
+                        <img src="https://placehold.co/60x60/3b82f6/ffffff?text=HN" alt="Harshitha Nanduri"
+                            class="rounded-full w-14 h-14 object-cover mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">Harshitha Nanduri</p>
+                            <p class="text-sm text-gray-500">FAANG Student</p>
+                            <div class="text-yellow-500 text-lg">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        "I joined the DSA program to improve my coding logic and it really worked. The mentors teach
+                        from basics to advanced topics clearly. Regular practice and mock tests improved my speed and
+                        accuracy in problem solving."
+                    </p>
+                </div>
+
+                <!-- Testimonial Card 3 -->
+                <div class="testimonial-card">
+                    <div class="flex items-start mb-4">
+                        <img src="https://placehold.co/60x60/3b82f6/ffffff?text=BR" alt="Bhavana Rachakonda"
+                            class="rounded-full w-14 h-14 object-cover mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">Bhavana Rachakonda</p>
+                            <p class="text-sm text-gray-500">FAANG Student</p>
+                            <div class="text-yellow-500 text-lg">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        "FAANG Tech Lab's DSA training made tough topics simple. The daily coding sessions and weekly
+                        challenges built my confidence. Mentors focus on logic development and explain every concept
+                        patiently. It's a great place to grow."
+                    </p>
+                </div>
+
+                <!-- Testimonial Card 4 -->
+                <div class="testimonial-card">
+                    <div class="flex items-start mb-4">
+                        <img src="https://placehold.co/60x60/3b82f6/ffffff?text=SR" alt="Sumanth Reddy"
+                            class="rounded-full w-14 h-14 object-cover mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">Sumanth Reddy</p>
+                            <p class="text-sm text-gray-500">FAANG Student</p>
+                            <div class="text-yellow-500 text-lg">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        "The DSA course is structured very well. I liked the way each topic connects with real-world
+                        coding tasks. The trainers give individual attention and guide us through practice questions
+                        that help in placements."
+                    </p>
+                </div>
+
+                <!-- Testimonial Card 5 -->
+                <div class="testimonial-card">
+                    <div class="flex items-start mb-4">
+                        <img src="https://placehold.co/60x60/3b82f6/ffffff?text=AB" alt="Anusha Bollineni"
+                            class="rounded-full w-14 h-14 object-cover mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">Anusha Bollineni</p>
+                            <p class="text-sm text-gray-500">FAANG Student</p>
+                            <div class="text-yellow-500 text-lg">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        "I had no strong foundation in DSA before joining FAANG Tech Lab, but now I can solve problems
+                        easily. The mentors give clear explanations and conduct regular practice sessions that helped me
+                        improve quickly."
+                    </p>
+                </div>
+
+                <!-- Testimonial Card 6 -->
+                <div class="testimonial-card">
+                    <div class="flex items-start mb-4">
+                        <img src="https://placehold.co/60x60/3b82f6/ffffff?text=MC" alt="Manoj Chadalavada"
+                            class="rounded-full w-14 h-14 object-cover mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">Manoj Chadalavada</p>
+                            <p class="text-sm text-gray-500">FAANG Student</p>
+                            <div class="text-yellow-500 text-lg">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        "FAANG Tech Lab's DSA classes are practical and interactive. The code-gym practice and
+                        assignments helped me apply concepts efficiently. I'm now more confident about solving interview
+                        questions and building logic."
+                    </p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- 5. Key Features Grid (Matching the Key Features UI Example) -->
-        <section class="w-full py-12 contact">
-            <div class="max-w-6xl mx-auto px-4 ui-section-bg">
-                <h2 class="text-2xl font-bold mb-8 text-gray-800 text-center">
-                    <span class="heading-underline">DSA Training Key Features</span>
-                </h2>
-
-                <!-- Responsiveness: Grid adapts from 2 columns (mobile) to 3 columns (tablet/desktop) -->
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                    <!-- Feature Card 1: Algorithm Practice -->
-                    <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
-                        <i class="fas fa-code text-xl mr-3"></i>
-                        <span class="font-semibold text-gray-700">40+ Algorithm Practice Sessions</span>
-                    </div>
-                    <!-- Feature Card 2: Pseudocode Focus -->
-                    <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
-                        <i class="fas fa-file-code text-xl mr-3"></i>
-                        <span class="font-semibold text-gray-700">Pseudocode Writing Mastery</span>
-                    </div>
-                    <!-- Feature Card 3: Interview Prep -->
-                    <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
-                        <i class="fas fa-handshake text-xl mr-3"></i>
-                        <span class="font-semibold text-gray-700">FAANG Interview Preparation</span>
-                    </div>
-                    <!-- Feature Card 4: Flexible Schedule -->
-                    <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
-                        <i class="fas fa-calendar-alt text-xl mr-3"></i>
-                        <span class="font-semibold text-gray-700">Weekend & Evening Batches</span>
-                    </div>
-                    <!-- Feature Card 5: Problem Solving -->
-                    <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
-                        <i class="fas fa-brain text-xl mr-3"></i>
-                        <span class="font-semibold text-gray-700">Algorithmic Thinking Development</span>
-                    </div>
-                    <!-- Feature Card 6: Mock Tests -->
-                    <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
-                        <i class="fas fa-clipboard-check text-xl mr-3"></i>
-                        <span class="font-semibold text-gray-700">Weekly Algorithm Assessments</span>
-                    </div>
-                    <!-- Feature Card 7: Visual Learning -->
-                    <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
-                        <i class="fas fa-project-diagram text-xl mr-3"></i>
-                        <span class="font-semibold text-gray-700">Visual Algorithm Demonstrations</span>
-                    </div>
-                    <!-- Feature Card 8: Expert Mentors -->
-                    <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
-                        <i class="fas fa-users text-xl mr-3"></i>
-                        <span class="font-semibold text-gray-700">FAANG Alumni Mentors</span>
-                    </div>
-                    <!-- Feature Card 9: Competitive Programming -->
-                    <div class="feature-card-item p-4 rounded-lg flex items-center shadow-sm">
-                        <i class="fas fa-trophy text-xl mr-3"></i>
-                        <span class="font-semibold text-gray-700">Competitive Programming Training</span>
-                    </div>
-                </div>
+    <!-- Contact Section from index.html -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Get in Touch</h2>
+                <p>Ready to master algorithms and data structures? Contact us for a free DSA consultation session.</p>
             </div>
-        </section>
-
-        <!-- 7. Testimonials Section with Continuous Scrolling -->
-        <section id="testimonials" class="w-full py-12 contact">
-            <div class="max-w-6xl mx-auto px-4">
-                <h2 class="text-2xl font-bold mb-8 text-gray-800 text-center">
-                    <span class="heading-underline">Success Stories from DSA Graduates</span>
-                </h2>
-
-                <!-- Horizontal Scrolling Testimonials Container (using index.html method) -->
-                <div class="codegym-content-wrapper">
-                    <!-- Testimonial Card 1 -->
-                    <div class="testimonial-card">
-                        <div class="flex items-start mb-4">
-                            <img src="https://placehold.co/60x60/3b82f6/ffffff?text=SR" alt="Sanjana Reddy"
-                                class="rounded-full w-14 h-14 object-cover mr-4">
-                            <div>
-                                <p class="font-semibold text-gray-800">Sanjana Reddy</p>
-                                <p class="text-sm text-gray-500">FAANG Student</p>
-                                <div class="text-yellow-500 text-lg">★★★★★</div>
-                            </div>
-                        </div>
-                        <p class="text-gray-700 text-sm">
-                            "The DSA course at FAANG Tech Lab helped me understand concepts clearly with real examples. The trainers explain logic step by step and the code-gym practice made problem solving easier. I feel more confident tackling interviews now."
-                        </p>
-                    </div>
-
-                    <!-- Testimonial Card 2 -->
-                    <div class="testimonial-card">
-                        <div class="flex items-start mb-4">
-                            <img src="https://placehold.co/60x60/3b82f6/ffffff?text=HN" alt="Harshitha Nanduri"
-                                class="rounded-full w-14 h-14 object-cover mr-4">
-                            <div>
-                                <p class="font-semibold text-gray-800">Harshitha Nanduri</p>
-                                <p class="text-sm text-gray-500">FAANG Student</p>
-                                <div class="text-yellow-500 text-lg">★★★★★</div>
-                            </div>
-                        </div>
-                        <p class="text-gray-700 text-sm">
-                            "I joined the DSA program to improve my coding logic and it really worked. The mentors teach from basics to advanced topics clearly. Regular practice and mock tests improved my speed and accuracy in problem solving."
-                        </p>
-                    </div>
-
-                    <!-- Testimonial Card 3 -->
-                    <div class="testimonial-card">
-                        <div class="flex items-start mb-4">
-                            <img src="https://placehold.co/60x60/3b82f6/ffffff?text=BR" alt="Bhavana Rachakonda"
-                                class="rounded-full w-14 h-14 object-cover mr-4">
-                            <div>
-                                <p class="font-semibold text-gray-800">Bhavana Rachakonda</p>
-                                <p class="text-sm text-gray-500">FAANG Student</p>
-                                <div class="text-yellow-500 text-lg">★★★★★</div>
-                            </div>
-                        </div>
-                        <p class="text-gray-700 text-sm">
-                            "FAANG Tech Lab's DSA training made tough topics simple. The daily coding sessions and weekly challenges built my confidence. Mentors focus on logic development and explain every concept patiently. It's a great place to grow."
-                        </p>
-                    </div>
-
-                    <!-- Testimonial Card 4 -->
-                    <div class="testimonial-card">
-                        <div class="flex items-start mb-4">
-                            <img src="https://placehold.co/60x60/3b82f6/ffffff?text=SR" alt="Sumanth Reddy"
-                                class="rounded-full w-14 h-14 object-cover mr-4">
-                            <div>
-                                <p class="font-semibold text-gray-800">Sumanth Reddy</p>
-                                <p class="text-sm text-gray-500">FAANG Student</p>
-                                <div class="text-yellow-500 text-lg">★★★★★</div>
-                            </div>
-                        </div>
-                        <p class="text-gray-700 text-sm">
-                            "The DSA course is structured very well. I liked the way each topic connects with real-world coding tasks. The trainers give individual attention and guide us through practice questions that help in placements."
-                        </p>
-                    </div>
-
-                    <!-- Testimonial Card 5 -->
-                    <div class="testimonial-card">
-                        <div class="flex items-start mb-4">
-                            <img src="https://placehold.co/60x60/3b82f6/ffffff?text=AB" alt="Anusha Bollineni"
-                                class="rounded-full w-14 h-14 object-cover mr-4">
-                            <div>
-                                <p class="font-semibold text-gray-800">Anusha Bollineni</p>
-                                <p class="text-sm text-gray-500">FAANG Student</p>
-                                <div class="text-yellow-500 text-lg">★★★★★</div>
-                            </div>
-                        </div>
-                        <p class="text-gray-700 text-sm">
-                            "I had no strong foundation in DSA before joining FAANG Tech Lab, but now I can solve problems easily. The mentors give clear explanations and conduct regular practice sessions that helped me improve quickly."
-                        </p>
-                    </div>
-
-                    <!-- Testimonial Card 6 -->
-                    <div class="testimonial-card">
-                        <div class="flex items-start mb-4">
-                            <img src="https://placehold.co/60x60/3b82f6/ffffff?text=MC" alt="Manoj Chadalavada"
-                                class="rounded-full w-14 h-14 object-cover mr-4">
-                            <div>
-                                <p class="font-semibold text-gray-800">Manoj Chadalavada</p>
-                                <p class="text-sm text-gray-500">FAANG Student</p>
-                                <div class="text-yellow-500 text-lg">★★★★★</div>
-                            </div>
-                        </div>
-                        <p class="text-gray-700 text-sm">
-                            "FAANG Tech Lab's DSA classes are practical and interactive. The code-gym practice and assignments helped me apply concepts efficiently. I'm now more confident about solving interview questions and building logic."
-                        </p>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+                    <h3>Contact Details</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 1st floor Lakshmipuram main road, opposite Sri patibandla
+                        sitaramaiah high school, Guntur</p>
+                    <p><i class="fas fa-envelope"></i> learn@faangtechlab.com</p>
+                    <p><i class="fas fa-phone-alt"></i>+91 8179423238</p>
+                    <p><i class="fas fa-globe"></i> <a href="https://faangtechlab.com" target="_blank"
+                            rel="noopener noreferrer">faangtechlab.com</a></p>
+                    <p><i class="fas fa-clock"></i> Always open</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/faangtechlab/?hl=en" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/faang-tech-lab-043855349/?originalSubdomain=in"
+                            target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Contact Section from index.html -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <div class="section-header" data-aos="fade-up">
-                    <h2>Get in Touch</h2>
-                    <p>Ready to master algorithms and data structures? Contact us for a free DSA consultation session.</p>
-                </div>
-                <div class="contact-content">
-                    <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
-                        <h3>Contact Details</h3>
-                        <p><i class="fas fa-map-marker-alt"></i> 1st floor Lakshmipuram main road, opposite Sri patibandla sitaramaiah high school, Guntur</p>
-                        <p><i class="fas fa-envelope"></i> learn@faangtechlab.com</p>
-                        <p><i class="fas fa-phone-alt"></i>+91 8179423238</p>
-                        <p><i class="fas fa-globe"></i> <a href="https://faangtechlab.com" target="_blank"
-                                rel="noopener noreferrer">faangtechlab.com</a></p>
-                        <p><i class="fas fa-clock"></i> Always open</p>
-                        <div class="social-links">
-                            <a href="https://www.instagram.com/faangtechlab/?hl=en" target="_blank"
-                                rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/faang-tech-lab-043855349/?originalSubdomain=in"
-                                target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
-                                    class="fab fa-linkedin-in"></i></a>
+                <div class="contact-form" data-aos="fade-left" data-aos-delay="200">
+                    <h3>Send Us a Message</h3>
+                    <form action="#" method="POST" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="from_name" required>
                         </div>
-                    </div>
-                    <div class="contact-form" data-aos="fade-left" data-aos-delay="200">
-                        <h3>Send Us a Message</h3>
-                        <form action="#" method="POST" id="contactForm">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="from_name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="from_email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="from_phone" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="course">Course Interested</label>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="from_email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="from_phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="course">Course Interested</label>
                             <select id="course" name="course_interested" required>
                                 <option value="">Select a course...</option>
-                                <option value="Java Programming" >Java Programming</option>
-                                <option value="Data Structures & Algorithms" selected>Data Structures & Algorithms</option>
+                                <option value="Java Programming">Java Programming</option>
+                                <option value="Data Structures & Algorithms" selected>Data Structures & Algorithms
+                                </option>
                                 <option value="Cybersecurity">Cybersecurity</option>
                                 <option value="Python Programming">Python Programming</option>
                                 <option value="MER(A)N Stack Development">MER(A)N Stack Development</option>
@@ -481,74 +491,74 @@
                                 <option value="Spring Boot Framework">Spring Boot Framework</option>
                                 <option value="AI">Artificial Intelligence (AI)</option>
                             </select>
-                            </div>
-                            <button type="submit" class="btn btn-primary form-submit-btn">Send Message</button>
-                            <div id="form-message" class="form-message"></div> <!-- Message display area -->
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- WhatsApp Floating Button -->
-        <a href="https://wa.me/918179423238?text=Hi%20Team%2C%20I%27m%20interested%20in%20your%20DSA%20Course."
-            class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-
-        <!-- Footer from index.html -->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-grid">
-                    <div class="footer-col about-col">
-                        <h3>FAANG Tech</h3>
-                        <p>Empowering the next generation of tech professionals with cutting-edge education in Java,
-                            Cybersecurity, and more.</p>
-                    </div>
-                    <div class="footer-col">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li><a href="../index.html#home">Home</a></li>
-                            <li><a href="../index.html#about">About Us</a></li>
-                            <li><a href="../index.html#courses">Our Courses</a></li>
-                            <li><a href="https://codegym.cc/" target="_blank">CodeGym</a></li>
-                            <li><a href="../index.html#team">Our Team</a></li>
-                            <li><a href="../index.html#training-the-trainers">Trainers</a></li>
-                            <li><a href="../index.html#office-tour">Office Tour</a></li>
-                            <li><a href="../index.html#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h3>Courses</h3>
-                        <ul>
-                            <li>Java Programming</li>
-                            <li>Cybersecurity</li>
-                            <li>Python Programming</li>
-                            <li>MERN Stack Development</li>
-                            <li>Git & GitHub Mastery</li>
-                            <li>Spring Boot Framework</li>
-                        </ul>
-                    </div>
-                    <div class="footer-col contact-footer-col">
-                        <h3>Contact Us</h3>
-                        <p><i class="fas fa-map-marker-alt" style="color: #1877F2;"></i> 1st floor Lakshmipuram main road,
-                            opposite Sri patibandla sitaramaiah high school, Guntur</p>
-                        <p><i class="fas fa-envelope" style="color: #1877F2;"></i> learn@faangtechlab.com</p>
-                        <p><i class="fas fa-phone-alt" style="color: #1877F2;"></i>+91 8179423238</p>
-                        <div class="footer-social">
-                            <a href="https://www.instagram.com/faangtechlab/?hl=en" target="_blank"
-                                rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/faang-tech-lab-043855349/?originalSubdomain=in"
-                                target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
-                                    class="fab fa-linkedin-in"></i></a>
                         </div>
-                    </div>
-                </div>
-                <div class="footer-bottom">
-                    <p>&copy; 2025 FAANG Tech. All rights reserved.</p>
+                        <button type="submit" class="btn btn-primary form-submit-btn">Send Message</button>
+                        <div id="form-message" class="form-message"></div> <!-- Message display area -->
+                    </form>
                 </div>
             </div>
-        </footer>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918179423238?text=Hi%20Team%2C%20I%27m%20interested%20in%20your%20DSA%20Course."
+        class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer from index.html -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col about-col">
+                    <h3>FAANG Tech</h3>
+                    <p>Empowering the next generation of tech professionals with cutting-edge education in Java,
+                        Cybersecurity, and more.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html#home">Home</a></li>
+                        <li><a href="../index.html#about">About Us</a></li>
+                        <li><a href="../index.html#courses">Our Courses</a></li>
+                        <li><a href="https://codegym.cc/" target="_blank">CodeGym</a></li>
+                        <li><a href="../index.html#team">Our Team</a></li>
+                        <li><a href="../index.html#training-the-trainers">Trainers</a></li>
+                        <li><a href="../index.html#office-tour">Office Tour</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Courses</h3>
+                    <ul>
+                        <li>Java Programming</li>
+                        <li>Cybersecurity</li>
+                        <li>Python Programming</li>
+                        <li>MERN Stack Development</li>
+                        <li>Git & GitHub Mastery</li>
+                        <li>Spring Boot Framework</li>
+                    </ul>
+                </div>
+                <div class="footer-col contact-footer-col">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt" style="color: #1877F2;"></i> 1st floor Lakshmipuram main road,
+                        opposite Sri patibandla sitaramaiah high school, Guntur</p>
+                    <p><i class="fas fa-envelope" style="color: #1877F2;"></i> learn@faangtechlab.com</p>
+                    <p><i class="fas fa-phone-alt" style="color: #1877F2;"></i>+91 8179423238</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/faangtechlab/?hl=en" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/faang-tech-lab-043855349/?originalSubdomain=in"
+                            target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FAANG Tech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
     </div>
 
     <!-- 3. SEO CORE: Schema Markup (Hidden Location Data) -->
@@ -574,9 +584,9 @@
     <!-- EmailJS Integration -->
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
-        (function () {
-            emailjs.init("rWERztWm7Bzg3_Oph"); // Updated with new account's public key
-        })();
+            (function () {
+                emailjs.init("rWERztWm7Bzg3_Oph"); // Updated with new account's public key
+            })();
     </script>
 
     <!-- Main JavaScript -->
@@ -584,14 +594,14 @@
 
     <!-- Mobile Menu Toggle Script -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
             const menuIcon = document.getElementById('menu-icon');
             const closeIcon = document.getElementById('close-icon');
 
             if (mobileMenuButton) {
-                mobileMenuButton.addEventListener('click', function() {
+                mobileMenuButton.addEventListener('click', function () {
                     mobileMenu.classList.toggle('hidden');
                     menuIcon.classList.toggle('hidden');
                     closeIcon.classList.toggle('hidden');
