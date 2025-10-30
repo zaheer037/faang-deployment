@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         element.scrollLeft = 0;
                     }
                 }
-            }, 20); // Adjust interval for speed (lower value = faster scroll)
+            }, 15); // Adjust interval for speed (lower value = faster scroll)
         } catch (error) {
             console.error(`Auto-scroll setup failed for ${intervalIdVar}:`, error);
         }
@@ -413,5 +413,77 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.key === 'Escape' && popupOverlay && popupOverlay.classList.contains('show')) {
             hidePopup();
         }
+    });
+});
+
+// Image Modal Functions for Office Gallery
+function openImageModal(imgElement) {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    const captionText = document.querySelector('.image-modal-caption');
+    
+    if (modal && modalImg && captionText) {
+        modal.style.display = 'block';
+        modalImg.src = imgElement.src;
+        modalImg.alt = imgElement.alt;
+        captionText.innerHTML = imgElement.alt;
+        
+        // Prevent body scrolling when modal is open
+        document.body.style.overflow = 'hidden';
+        
+        // Add fade-in animation
+        modal.style.animation = 'fadeIn 0.3s ease';
+        
+        // Add keyboard event listener for escape key
+        document.addEventListener('keydown', handleModalKeydown);
+    }
+}
+
+function closeImageModal() {
+    const modal = document.getElementById('imageModal');
+    
+    if (modal) {
+        // Add fade-out animation
+        modal.style.animation = 'fadeOut 0.3s ease';
+        
+        // Hide modal after animation completes
+        setTimeout(() => {
+            modal.style.display = 'none';
+            // Restore body scrolling
+            document.body.style.overflow = 'auto';
+        }, 300);
+        
+        // Remove keyboard event listener
+        document.removeEventListener('keydown', handleModalKeydown);
+    }
+}
+
+function handleModalKeydown(e) {
+    if (e.key === 'Escape') {
+        closeImageModal();
+    }
+}
+
+// Add click event listeners to all office gallery images when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    const officeImages = document.querySelectorAll('.office-gallery img');
+    
+    officeImages.forEach(img => {
+        // Add hover effect classes if not already present
+        img.style.cursor = 'pointer';
+        
+        // Add click event listener
+        img.addEventListener('click', function() {
+            openImageModal(this);
+        });
+        
+        // Add keyboard accessibility
+        img.setAttribute('tabindex', '0');
+        img.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                openImageModal(this);
+            }
+        });
     });
 });
