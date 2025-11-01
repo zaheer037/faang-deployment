@@ -1100,8 +1100,40 @@ html[data-theme='dark'] .training-the-trainers {
     margin: 0 auto;
 }
 
-.training-the-trainers .codegym-content {
-    width: 300px;
+/* Trainer Content Cards - Text Only */
+.trainer-content {
+    background: var(--bg-card);
+    padding: var(--spacing-lg) var(--spacing-md);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+    transition: all 0.3s ease;
+    margin: var(--spacing-sm);
+    min-width: 280px;
+    max-width: 350px;
+    flex: 1;
+    text-align: center;
+    border: 1px solid var(--border-color);
+}
+
+.trainer-content:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+}
+
+.trainer-content h3 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+    line-height: 1.3;
+}
+
+.trainer-description {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    text-align: center;
 }
 
 
