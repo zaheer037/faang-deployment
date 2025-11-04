@@ -1755,6 +1755,29 @@ html[data-theme='dark'] .form-message.error {
     .footer-col ul {
         text-align: center;
     }
+    
+    /* Better alignment for contact footer on mobile */
+    .footer-col.contact-footer-col {
+        text-align: center;
+    }
+    .footer-col.contact-footer-col p {
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+    .footer-col.contact-footer-col p i {
+        margin-right: 10px;
+        margin-top: 2px;
+        flex-shrink: 0;
+        font-size: 16px;
+    }
+    .footer-social {
+        justify-content: center;
+    }
     .office-gallery {
         grid-template-columns: 1fr;
         gap: var(--spacing-md);
