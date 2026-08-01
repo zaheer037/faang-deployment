@@ -303,7 +303,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 formMessage.classList.add('error');
                 formMessage.style.opacity = 1;
             } else {
-                emailjs.sendForm('service_1270jkg', 'template_nw5awxg', contactForm)
+                emailjs.sendForm('service_nnw40dw', 'template_jxj3vnb', contactForm)
                     .then(function(response) {
                         formMessage.textContent = ' Message sent successfully!';
                         formMessage.classList.add('success');
